@@ -6,8 +6,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
-    '@nuxtjs/robots',
-    '@nuxtjs/sitemap',
   ],
   
   app: {
@@ -30,25 +28,5 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap' }
       ]
     }
-  },
-  robots: {
-    UserAgent: '*',
-    Allow: '/',
-    Sitemap: 'https://hugoschroder.dev/sitemap.xml',
-  },
-  sitemap: {
-    siteUrl: 'https://hugoschroder.dev',
-    trailingSlash: true,
-    xslUrl: 'https://hugoschroder.dev/sitemap.xsl', 
-    credits: false, 
-    routes: async () => {
-      return [];
-    },
-    sitemapName: 'sitemap.xml',
-    defaults: {
-      changefreq: 'weekly',
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-  },
+  }
 })
