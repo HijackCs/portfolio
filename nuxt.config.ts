@@ -5,16 +5,18 @@ export default defineNuxtConfig({
   
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
   ],
   
   app: {
     head: {
-      title: 'Hugo Schroder - Développeur Web Freelance',
+      title: 'Hugo Schroder - Développeur Web full-stack',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Portfolio de Hugo Schroder, développeur web freelance spécialisé dans les technologies modernes. Services de développement web sur mesure.' },
+        { name: 'description', content: 'Portfolio de Hugo Schroder, développeur web full-stack spécialisé dans les technologies modernes. Services de développement web sur mesure.' },
         { name: 'keywords', content: 'développeur web, freelance, Vue.js, Nuxt.js, React, JavaScript, TypeScript' },
         { name: 'author', content: 'Hugo Schroder' },
         { property: 'og:type', content: 'website' },
@@ -28,5 +30,25 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap' }
       ]
     }
-  }
+  },
+  robots: {
+    UserAgent: '*',
+    Allow: '/',
+    Sitemap: 'https://hugoschroder.dev/sitemap.xml',
+  },
+  sitemap: {
+    siteUrl: 'https://hugoschroder.dev',
+    trailingSlash: true,
+    xslUrl: 'https://hugoschroder.dev/sitemap.xsl', 
+    credits: false, 
+    routes: async () => {
+      return [];
+    },
+    sitemapName: 'sitemap.xml',
+    defaults: {
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date().toISOString(),
+    },
+  },
 })
