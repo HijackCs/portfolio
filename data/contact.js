@@ -1,7 +1,6 @@
 export const contactData = {
   contact: {
     email: "contact@hugoschroder.dev",
-    phone: "+33 7 81 57 29 30",
     location: "Nord, France",
   }
 }

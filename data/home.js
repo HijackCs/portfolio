@@ -59,5 +59,5 @@ export const featuredProjects = [
 
 export const homeMeta = {
   title: 'Accueil - Hugo Schroder | Développeur Web Full-Stack',
-  description: 'Portfolio de Hugo Schroder, développeur web full-stack spécialisé en Symfony et Vue.js. Alternant CAF du Nord, futur freelance disponible septembre 2025.'
+  description: 'Portfolio de Hugo Schroder, développeur web full-stack spécialisé en Symfony et Vue.js. Alternant, futur freelance disponible à partir de septembre 2025.'
 }

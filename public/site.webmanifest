@@ -1,0 +1,27 @@
+{
+  "name": "Hugo Schroder - Développeur Web Full-Stack",
+  "short_name": "Hugo Schroder",
+  "description": "Portfolio de Hugo Schroder, développeur web full-stack spécialisé dans les technologies modernes.",
+  "icons": [
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#1e293b",
+  "background_color": "#0f172a",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
