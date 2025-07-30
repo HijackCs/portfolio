@@ -3,8 +3,8 @@
     <NuxtRouteAnnouncer />
     <NuxtLayout>
       <NuxtPage />
-      <Analytics />
     </NuxtLayout>
+    <Analytics />
   </div>
 </template>
 
