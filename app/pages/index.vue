@@ -46,7 +46,7 @@
                 <div class="inline-flex items-center gap-4 px-6 py-3 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 backdrop-blur-sm border border-cyan-300/30 rounded-2xl">
                   <div class="flex items-center gap-3">
                     <div class="w-3 h-3 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full animate-pulse"></div>
-                    <span class="text-cyan-300 text-lg font-semibold">Développeur Quarkus & Vue.js</span>
+                    <span class="text-cyan-300 text-lg font-semibold">Développeur Vue.js/Nuxt.js & NestJS</span>
                   </div>
                 </div>
               </div>
@@ -254,7 +254,14 @@ import { services, featuredProjects, homeMeta } from '../data/home.js'
 useHead({
   title: homeMeta.title,
   meta: [
-    { name: 'description', content: homeMeta.description }
+    { name: 'description', content: homeMeta.description },
+    { property: 'og:title', content: homeMeta.title },
+    { property: 'og:description', content: homeMeta.description },
+    { name: 'twitter:title', content: homeMeta.title },
+    { name: 'twitter:description', content: homeMeta.description },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { property: 'og:image', content: 'https://hugoschroder.dev/og-image.png' },
+    { name: 'twitter:image', content: 'https://hugoschroder.dev/og-image.png' }
   ]
 })
 

@@ -10,25 +10,25 @@ export default defineNuxtConfig({
   
   app: {
     head: {
-      title: 'Hugo Schroder - Développeur Web full-stack',
+      title: 'Hugo Schroder - Développeur Web full-Stack',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Portfolio de Hugo Schroder, développeur web full-stack spécialisé dans les technologies modernes. Services de développement web sur mesure.' },
-        { name: 'keywords', content: 'développeur web, freelance, Vue.js, Nuxt.js, React, JavaScript, TypeScript' },
+        { name: 'description', content: 'Portfolio de Hugo Schroder, développeur web full-stack travaillant avec Nuxt.js (Vue.js) et TypeScript. J\'aide à créer des applications rapides, SEO-friendly et maintenables. Ouvert aux opportunités CDI et missions freelance.' },
+        { name: 'keywords', content: 'nuxt.js, vue.js, typescript, tailwind css, node.js, développeur web, freelance, seo, performance' },
         { name: 'author', content: 'Hugo Schroder' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: 'Hugo Schroder - Développeur Web Freelance' },
-        { property: 'og:description', content: 'Portfolio de Hugo Schroder, développeur web freelance spécialisé dans les technologies modernes.' },
+        { property: 'og:title', content: 'Hugo Schroder - Développeur web full-Stack' },
+        { property: 'og:description', content: 'Portfolio de Hugo Schroder, développeur web full-stack travaillant avec Nuxt.js (Vue.js) et TypeScript. J\'aide à créer des applications rapides, SEO-friendly et maintenables. Ouvert aux opportunités CDI et missions freelance.' },
         { property: 'og:url', content: 'https://hugoschroder.dev' },
         { property: 'og:site_name', content: 'Hugo Schroder' },
         { property: 'og:image', content: 'https://hugoschroder.dev/og-image.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
-        { property: 'og:image:alt', content: 'Hugo Schroder - Développeur Web Full-Stack' },
+        { property: 'og:image:alt', content: 'Hugo Schroder - Développeur Nuxt.js & Vue.js' },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Hugo Schroder - Développeur Web Full-Stack' },
-        { name: 'twitter:description', content: 'Portfolio de Hugo Schroder, développeur web full-stack spécialisé dans les technologies modernes.' },
+        { name: 'twitter:title', content: 'Hugo Schroder - Développeur Nuxt.js & Vue.js' },
+        { name: 'twitter:description', content: 'Portfolio de Hugo Schroder, développeur web full-stack travaillant avec Nuxt.js (Vue.js) et TypeScript. J\'aide à créer des applications rapides, SEO-friendly et maintenables. Ouvert aux opportunités CDI et missions freelance.' },
         { name: 'twitter:image', content: 'https://hugoschroder.dev/og-image.png' }
       ],
       link: [

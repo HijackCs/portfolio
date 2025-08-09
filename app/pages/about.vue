@@ -126,10 +126,10 @@
                 <h3 class="text-xl font-bold text-white mb-3">Frontend</h3>
                 <div class="flex flex-wrap gap-2">
                   <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-lg text-sm">Vue.js</span>
+                  <span class="px-3 py-1 bg-red-500/20 text-red-300 rounded-lg text-sm">Nuxt.js</span>
                   <span class="px-3 py-1 bg-red-500/20 text-red-300 rounded-lg text-sm">Quasar</span>
                   <span class="px-3 py-1 bg-red-500/20 text-red-300 rounded-lg text-sm">Tailwind</span>
                   <span class="px-3 py-1 bg-red-500/20 text-red-300 rounded-lg text-sm">Bootstrap</span>
-                  <span class="px-3 py-1 bg-red-500/20 text-red-300 rounded-lg text-sm">Nuxt.js</span>
                   <span class="px-3 py-1 bg-red-500/20 text-red-300 rounded-lg text-sm">JavaScript</span>
                 </div>
               </div>
@@ -147,8 +147,9 @@
               <div>
                 <h3 class="text-xl font-bold text-white mb-3">Backend</h3>
                 <div class="flex flex-wrap gap-2">
-                  <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-lg text-sm">Symfony</span>
-                  <span class="px-3 py-1 bg-rose-500/20 text-rose-300 rounded-lg text-sm">PHP</span>
+                  <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-lg text-sm">NestJS</span>
+                  <span class="px-3 py-1 bg-rose-500/20 text-rose-300 rounded-lg text-sm">Node.js</span>
+                  <span class="px-3 py-1 bg-rose-500/20 text-rose-300 rounded-lg text-sm">Symfony</span>
                   <span class="px-3 py-1 bg-rose-500/20 text-rose-300 rounded-lg text-sm">Twig</span>
                   <span class="px-3 py-1 bg-rose-500/20 text-rose-300 rounded-lg text-sm">Java</span>
                   <span class="px-3 py-1 bg-rose-500/20 text-rose-300 rounded-lg text-sm">Quarkus</span>

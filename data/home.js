@@ -3,10 +3,10 @@
 export const services = [
   {
     title: 'Développement Full-Stack',
-    description: 'Applications web ou mobiles complètes avec Quarkus backend et Vue.js/Quasar frontend.',
+    description: 'Applications web ou mobiles complètes avec NestJS backend et Vue.js/Nuxt.js frontend.',
     icon: '🚀',
     features: [
-      'Applications Quarkus/Vue.js',
+      'Applications Nuxt.js/Vue.js',
       'Sites web ou mobiles responsive',
       'APIs REST sécurisées',
       'Interfaces utilisateur modernes'
@@ -14,10 +14,10 @@ export const services = [
   },
   {
     title: 'Développement Backend',
-    description: 'Solutions serveur robustes avec Quarkus et gestion de bases de données.',
+    description: 'Solutions serveur robustes avec NestJS et gestion de bases de données.',
     icon: '⚙️',
     features: [
-      'Applications Quarkus',
+      'Applications NestJS',
       'APIs REST performantes',
       'Bases de données PostgreSQL',
       'Architecture MVC'
@@ -39,9 +39,9 @@ export const services = [
 export const featuredProjects = [
   {
     title: 'Application interne',
-    description: 'Application web de gestion des temps interne développée en alternance avec Symfony et  Quasar (Vue.js).',
+    description: 'Application web de gestion des temps interne développée en alternance avec Quasar (Vue.js) et Symfony.',
     emoji: '🏢',
-    technologies: ['Symfony', 'Quasar', 'PostgreSQL']
+    technologies: ['Quasar', 'PostgreSQL', 'Symfony']
   },
   {
     title: 'Gfaim',
@@ -58,6 +58,6 @@ export const featuredProjects = [
 ]
 
 export const homeMeta = {
-  title: 'Accueil - Hugo Schroder | Développeur Web Full-Stack',
-  description: 'Portfolio de Hugo Schroder, développeur web full-stack spécialisé en Symfony et Vue.js. Alternant, futur freelance disponible à partir de septembre 2025.'
+  title: 'Accueil - Hugo Schroder | Développeur Nuxt.js & Vue.js',
+  description: 'Portfolio de Hugo Schroder, développeur web full-stack travaillant avec Nuxt.js (Vue.js) et TypeScript. Alternant, futur freelance disponible à partir de septembre 2025.'
 }

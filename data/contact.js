@@ -23,7 +23,7 @@ export const socialLinks = [
 export const faqItems = [
   {
     question: "Quelle est votre expérience ?",
-    answer: "Je suis développeur avec 2 ans d'expérience en alternance au sein d'une administration publique, où j'ai développé des applications web avec Symfony et Vue.js. Diplômé d'un Master en Informatique, je maîtrise le développement full-stack."
+    answer: "Je suis développeur avec 2 ans d'expérience en alternance au sein d'une administration publique, où j'ai développé des applications web avec symfony et Vue.js. Diplômé d'un Master en Informatique, je maîtrise le développement full-stack."
   },
   {
     question: "Pourquoi choisir un développeur junior ?",
@@ -39,7 +39,7 @@ export const faqItems = [
   },
   {
     question: "Quelles technologies maîtrisez-vous ?",
-    answer: "Spécialisé en Symfony et Vue.js (expérience professionnelle), je maîtrise aussi Quarkus, PostgreSQL, Docker, Git. Toujours curieux d'apprendre de nouvelles technologies selon vos besoins."
+    answer: "Je travaille principalement avec Nuxt.js (Vue.js) et TypeScript. Je maîtrise aussi Symfony, Quarkus, PostgreSQL, Docker, Git. Toujours curieux d'apprendre de nouvelles technologies selon vos besoins."
   },
   {
     question: "Comment travaillez-vous ?",

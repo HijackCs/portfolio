@@ -1,7 +1,7 @@
 export const profile = {
   name: "Hugo Schroder",
   title: "Développeur Web Full-Stack",
-  subtitle: "Symfony & Vue.js | Ouvert CDI & Freelance",
+  subtitle: "Nuxt.js & Vue.js | Ouvert CDI & Freelance",
   location: "Nord, France",
   bio: {
     short: "Étudiant en Master Informatique avec 2 ans d'expérience en alternance, en développement web full-stack (Symfony/Vue.js).",
