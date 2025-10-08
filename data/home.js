@@ -38,26 +38,26 @@ export const services = [
 
 export const featuredProjects = [
   {
-    title: 'Application interne',
-    description: 'Application web de gestion des temps interne développée en alternance avec Quasar (Vue.js) et Symfony.',
+    title: 'Application interne alternance',
+    description: 'Optimisation de la gestion des temps : réduction de 30% du temps de saisie grâce à une application web complète développée avec Symfony et Vue.js.',
     emoji: '🏢',
     technologies: ['Quasar', 'PostgreSQL', 'Symfony']
   },
   {
     title: 'Gfaim',
-    description: 'Application mobile de gestion des repas et du frigo avec authentification et API REST sécurisée.',
+    description: 'Solution anti-gaspillage alimentaire : application mobile avec gestion intelligente du frigo et suggestions de recettes personnalisées.',
     emoji: '🎓',
     technologies: ['Java', 'Quarkus', 'Android']
   },
   {
-    title: 'Portfolio Personnel',
-    description: 'Site portfolio moderne avec Nuxt.js, design 3D et système de blog intégré.',
+    title: 'Portfolio Hijack Dev',
+    description: 'Vitrine professionnelle moderne avec Nuxt.js et design 3D avec une UX optimisée.',
     emoji: '💼',
     technologies: ['Nuxt.js', 'Vue.js', 'Tailwind CSS', 'Markdown']
   }
 ]
 
 export const homeMeta = {
-  title: 'Accueil - Hugo Schroder | Développeur Nuxt.js & Vue.js',
-  description: 'Portfolio de Hugo Schroder, développeur web full-stack travaillant avec Nuxt.js (Vue.js) et TypeScript. Alternant, futur freelance disponible à partir de septembre 2025.'
+  title: 'Accueil -  Hijack Dev | Hugo Schroder - Développeur Full-Stack & UI Designer',
+  description: 'Hijack Dev : Je transforme vos idées en solutions web performantes et bien pensées. Développeur freelance Vue.js/Nuxt.js & UI designer passionné par la création, l\'innovation et le design. Disponible immédiatement.'
 }

@@ -15,6 +15,14 @@ export const socialLinks = [
     url: 'https://github.com/hijackcs'
   },
   {
+    name: 'Twitter',
+    url: 'https://twitter.com/hijack_dev'
+  },
+  {
+    name: 'Instagram',
+    url: 'https://instagram.com/hijack_dev'
+  },
+  {
     name: 'Email',
     url: 'mailto:contact@hugoschroder.dev'
   }
@@ -22,32 +30,32 @@ export const socialLinks = [
 
 export const faqItems = [
   {
-    question: "Quelle est votre expérience ?",
-    answer: "Je suis développeur avec 2 ans d'expérience en alternance au sein d'une administration publique, où j'ai développé des applications web avec symfony et Vue.js. Diplômé d'un Master en Informatique, je maîtrise le développement full-stack."
+    question: "Qu'est-ce que Hijack Dev ?",
+    answer: "Hijack Dev est ma marque personnelle centrée sur la création, l'expérimentation, l'innovation et le design. C'est ma vision du développement : transformer des idées en solutions concrètes, utiles et bien pensées."
   },
   {
-    question: "Pourquoi choisir un développeur junior ?",
-    answer: "Mon profil junior est un atout : tarifs compétitifs, technologies modernes maîtrisées, grande motivation et disponibilité. Mon expérience en alternance m'a formé aux contraintes du monde professionnel."
+    question: "Quelle est votre expérience ?",
+    answer: "Développeur full-stack & UI designer avec 2 ans d'expérience en alternance au sein d'une institution publique. Diplômé d'un Master Informatique, j'ai développé des applications complètes avec Symfony, Vue.js et perfectionné mes compétences DevOps."
   },
   {
     question: "Comment garantissez-vous la qualité ?",
-    answer: "Formation solide en Master, expérience concrète sur des projets réels au sein d'une administration publique, respect des bonnes pratiques (tests, documentation, Git). Je privilégie la qualité à la quantité."
+    answer: "Je combine expertise technique et design centré utilisateur. Chaque projet bénéficie d'une approche rigoureuse : bonnes pratiques, tests, documentation, et surtout une attention particulière à l'UX et aux besoins réels."
   },
   {
     question: "Êtes-vous disponible dès maintenant ?",
-    answer: "Je serai disponible dès septembre 2025 après la fin de mon alternance. Je peux déjà discuter de vos projets et établir un planning pour démarrer rapidement."
+    answer: "Oui, je suis disponible immédiatement pour des missions freelance. Contactez-moi pour discuter de votre projet et définir ensemble les modalités de collaboration."
   },
   {
     question: "Quelles technologies maîtrisez-vous ?",
-    answer: "Je travaille principalement avec Nuxt.js (Vue.js) et TypeScript. Je maîtrise aussi Symfony, Quarkus, PostgreSQL, Docker, Git. Toujours curieux d'apprendre de nouvelles technologies selon vos besoins."
+    answer: "Vue.js/Nuxt.js, NestJS, Symfony, PostgreSQL, Docker, Figma. J'aime expérimenter avec de nouvelles technologies et je m'adapte rapidement aux besoins spécifiques de chaque projet."
   },
   {
-    question: "Comment travaillez-vous ?",
-    answer: "Méthodologie agile apprise en entreprise et en Master: communication régulière, livrables fréquents, documentation claire. Je privilégie la transparence et l'écoute de vos besoins."
+    question: "Quelle est votre approche de travail ?",
+    answer: "Je crois en l'expérimentation continue, le design centré utilisateur et la communication transparente. Mon objectif : créer des solutions simples, performantes et qui ont un impact réel pour vos utilisateurs."
   }
 ]
 
 export const contactMeta = {
-  title: 'Contact - Hugo Schroder | Développeur Web Full-Stack',
-  description: 'Contactez-moi pour discuter de votre projet web ou de vos besoins en développement. Développeur web full-stack spécialisé en Vue.js, Symfony et Quarkus, ouvert aux opportunités CDI et missions freelance. Réponse rapide garantie.'
+  title: 'Contact - Hijack Dev | Hugo Schroder - Transformons votre idée en réalité',
+  description: 'Vous avez une idée de projet ? Discutons-en ensemble. Développeur freelance full-stack & UI designer, je transforme vos idées en produits concrets, performants et bien conçus. Réponse sous 24h garantie.'
 }

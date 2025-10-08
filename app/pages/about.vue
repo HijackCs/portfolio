@@ -26,7 +26,7 @@
         <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in">
           <div class="text-center space-y-6">
             <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-500/20 to-rose-500/20 backdrop-blur-sm border border-red-300/30 rounded-full">
-              <span class="text-red-300 text-lg font-medium">👨‍💻 À propos de moi</span>
+              <span class="text-red-300 text-lg font-medium">✨ Hijack Dev - À propos</span>
             </div>
             <h1 class="text-6xl md:text-8xl font-black text-white leading-tight tracking-tight">
               {{ profileData.name }}
@@ -52,12 +52,42 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <!-- Text Content -->
           <div class="space-y-8">
-            <div class="space-y-6">
+            <div class="space-y-8">
               <h2 class="text-4xl md:text-5xl font-bold text-white">
                 Mon <span class="bg-gradient-to-r from-red-400 to-rose-500 bg-clip-text text-transparent">parcours</span>
               </h2>
-              <div class="text-lg text-gray-300 leading-relaxed whitespace-pre-line">
-                {{ profileData.bio.long }}
+              
+              <!-- Qui je suis -->
+              <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                  <span>🧑‍💻</span> Qui je suis
+                </h3>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                  Développeur full-stack et UI designer freelance, je suis passionné par la tech, l'innovation et la création. 
+                  Diplômé d'un Master Informatique Ingénierie Logiciel pour l'Internet à l'Université d'Artois, j'ai effectué 
+                  mon alternance pendant 2 ans au sein de la CAF du Nord.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                  Durant cette expérience, j'ai développé de A à Z des applications web avec Symfony et Vue.js, tout en 
+                  perfectionnant mes compétences DevOps (CI/CD, Docker, automatisation). Cette immersion m'a permis d'acquérir 
+                  une vision complète du développement, de la conception UX à la mise en production.
+                </p>
+              </div>
+
+              <!-- Ma philosophie -->
+              <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                  <span>🚀</span> Ma philosophie
+                </h3>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                  Je crois que le développement ne se résume pas à écrire du code. C'est transformer des idées en solutions 
+                  concrètes, utiles et intuitives. J'aime expérimenter, apprendre en continu, et concevoir des produits qui 
+                  ont un impact réel.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                  Mon approche combine expertise technique et design centré utilisateur. Chaque projet est une opportunité 
+                  de créer quelque chose d'unique, performant et bien pensé.
+                </p>
               </div>
             </div>
 
@@ -201,9 +231,9 @@
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-1 gap-8 max-w-6xl mx-auto">
           <!-- Freelance -->
-          <div class="group relative backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 hover:border-blue-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
+          <div class="group relative backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 hover:border-blue-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 max-w-2xl mx-auto">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div class="relative z-10">
               <div class="flex items-center mb-6">
@@ -235,46 +265,15 @@
             </div>
           </div>
 
-          <!-- CDI -->
-          <div class="group relative backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 hover:border-purple-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20">
-            <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div class="relative z-10">
-              <div class="flex items-center mb-6">
-                <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4">
-                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                  </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-white">Poste CDI</h3>
-              </div>
-              <ul class="space-y-3 text-gray-300">
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
-                  Équipe dynamique & collaborative
-                </li>
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
-                  Stack technique moderne
-                </li>
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
-                  Projets à fort impact
-                </li>
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
-                  Télétravail partiel/total
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
 
         <!-- Disponibilité -->
-        <div class="text-center mt-12">
+        <div class="text-center mt-12 space-y-6">
           <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-400/30 rounded-full">
             <div class="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></div>
-            <span class="text-green-300 font-semibold">Disponible dès septembre 2025</span>
+            <span class="text-green-300 font-semibold">Disponible immédiatement pour missions freelance</span>
           </div>
+
         </div>
       </div>
     </section>
@@ -323,19 +322,19 @@ const profileData = ref(profile)
 
 // SEO Meta tags
 useHead({
-  title: `À propos - ${profile.name} | ${profile.title}`,
+  title: `À propos - Hijack Dev | Hugo Schroder - Développeur Full-Stack & UI Designer`,
   meta: [
     {
       name: 'description',
-      content: profile.bio.short
+      content: 'Hijack Dev : Passionné par la création, l\'innovation et le design. Développeur full-stack & UI designer freelance avec 2 ans d\'expérience. Je transforme vos idées en solutions concrètes et bien pensées. Disponible immédiatement.'
     },
     {
       property: 'og:title',
-      content: `À propos - ${profile.name} | ${profile.title}`
+      content: 'À propos - Hijack Dev | Hugo Schroder - Développeur Full-Stack & UI Designer'
     },
     {
       property: 'og:description',
-      content: profile.bio.short
+      content: 'Hijack Dev : Passionné par la création, l\'innovation et le design. Développeur full-stack & UI designer freelance avec 2 ans d\'expérience. Je transforme vos idées en solutions concrètes et bien pensées.'
     },
     {
       property: 'og:type',

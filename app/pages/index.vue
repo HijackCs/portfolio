@@ -30,23 +30,34 @@
           <!-- Hero Content -->
           <div class="text-center space-y-8">
             <div class="space-y-6">
-              <h1 class="text-6xl md:text-8xl font-black text-white leading-tight tracking-tight">
-                Hugo
+              <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 backdrop-blur-sm border border-cyan-300/30 rounded-full mb-6">
+                <span class="text-cyan-300 text-lg font-semibold">✨ Hijack Dev</span>
+              </div>
+              <h1 class="text-5xl md:text-7xl font-black text-white leading-tight tracking-tight">
+                Je transforme vos idées en
                 <span class="block bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-pulse">
-                  Schroder
+                  solutions web performantes et bien pensées
                 </span>
               </h1>
               <div class="space-y-4">
-                <p class="text-2xl md:text-3xl text-gray-200 font-light max-w-4xl mx-auto leading-relaxed">
-                  Développeur web fullstack passionné par la création d'expériences digitales 
-                  <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent font-semibold">extraordinaires et innovantes</span>
+                <p class="text-xl md:text-2xl text-gray-200 font-light max-w-4xl mx-auto leading-relaxed">
+                  Développeur full-stack & UI designer freelance. Je crée des expériences digitales innovantes en mêlant
+                  <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent font-semibold">création, design et expérimentation</span>
                 </p>
                 
-                <!-- Spécialisation -->
-                <div class="inline-flex items-center gap-4 px-6 py-3 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 backdrop-blur-sm border border-cyan-300/30 rounded-2xl">
-                  <div class="flex items-center gap-3">
-                    <div class="w-3 h-3 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full animate-pulse"></div>
-                    <span class="text-cyan-300 text-lg font-semibold">Développeur Vue.js/Nuxt.js & NestJS</span>
+                <div class="flex flex-col items-center gap-4">
+                  <!-- Spécialisation -->
+                  <div class="flex w-fit items-center gap-4 px-6 py-3 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 backdrop-blur-sm border border-cyan-300/30 rounded-2xl">
+                    <div class="flex items-center gap-3">
+                      <div class="w-3 h-3 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full animate-pulse"></div>
+                      <span class="text-cyan-300 text-lg font-semibold">Développeur Vue.js/Nuxt.js & NestJS</span>
+                    </div>
+                  </div>
+
+                  <!-- Disponibilité Freelance (moved under specialization) -->
+                  <div class="flex w-fit items-center gap-3 px-4 py-2 bg-gradient-to-r from-green-500/20 to-emerald-500/20 backdrop-blur-sm border border-green-400/30 rounded-full">
+                    <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    <span class="text-green-300 text-lg font-medium">Disponible immédiatement pour missions freelance</span>
                   </div>
                 </div>
               </div>
@@ -62,9 +73,12 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </NuxtLink>
-            <NuxtLink to="/contact" class="group relative inline-flex items-center px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-2xl shadow-xl hover:bg-white/20 hover:border-purple-400/50 hover:shadow-purple-500/25 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300">
-              <span class="text-lg">Discutons de votre projet</span>
-              <div class="ml-3 w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full animate-pulse"></div>
+            <NuxtLink to="/contact" class="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-600 text-white font-bold rounded-2xl shadow-2xl hover:shadow-purple-500/50 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span class="relative z-10 text-lg">Travaillons ensemble</span>
+              <svg class="relative z-10 w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
             </NuxtLink>
           </div>
         </div>
@@ -87,9 +101,9 @@
                 <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">projet digital</span>
               </h2>
               <p class="text-lg text-gray-300 leading-relaxed">
-                Avec plus de 2 ans d'expérience, je transforme vos idées 
-                en solutions digitales performantes et sur mesure. Mon approche combine expertise 
-                technique et vision créative pour créer des expériences utilisateur exceptionnelles.
+                Passionné par la tech, l'innovation et la création, je transforme vos idées en solutions concrètes, 
+                utiles et intuitives. Mon approche allie expertise technique et design centré utilisateur pour créer 
+                des expériences qui ont un véritable impact.
               </p>
             </div>
 
@@ -167,6 +181,54 @@
                 {{ feature }}
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ma Vision Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
+      <!-- Background Effects -->
+      <div class="absolute inset-0">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-purple-400/20 to-pink-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob"></div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center space-y-4 mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-white">
+            Ma <span class="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">vision</span>
+          </h2>
+          <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+            Comment je travaille et ce qui guide mes projets
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-purple-400/30 transition-all duration-300 group">
+            <div class="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">🧪</div>
+            <h3 class="text-xl font-bold text-white mb-4">Expérimentation continue</h3>
+            <p class="text-gray-300 leading-relaxed">
+              Je crois que les meilleures idées naissent de l'expérimentation. Tester, apprendre et itérer 
+              font partie intégrante de mon processus créatif.
+            </p>
+          </div>
+
+          <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-purple-400/30 transition-all duration-300 group">
+            <div class="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">🎨</div>
+            <h3 class="text-xl font-bold text-white mb-4">Design centré utilisateur</h3>
+            <p class="text-gray-300 leading-relaxed">
+              Mon objectif est de concevoir des solutions simples, utiles et efficaces. Chaque décision 
+              de design est guidée par les besoins réels des utilisateurs.
+            </p>
+          </div>
+
+          <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-purple-400/30 transition-all duration-300 group">
+            <div class="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">🚀</div>
+            <h3 class="text-xl font-bold text-white mb-4">Créer, apprendre, partager</h3>
+            <p class="text-gray-300 leading-relaxed">
+              Le développement ne se résume pas à écrire du code. C'est créer, apprendre en continu et 
+              partager ses connaissances pour faire grandir la communauté.
+            </p>
           </div>
         </div>
       </div>
