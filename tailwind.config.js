@@ -40,6 +40,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        heading: ['Satoshi', 'sans-serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace']
       },
       animation: {
@@ -80,5 +82,82 @@ module.exports = {
       },
     }
   },
-  plugins: []
+  plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.title-hero': {
+          fontFamily: 'Satoshi, sans-serif',
+          fontWeight: '900',
+          fontSize: '3rem',
+          lineHeight: '1.1',
+          letterSpacing: '-0.025em',
+          '@media (min-width: 768px)': {
+            fontSize: '4.5rem',
+          },
+        },
+        '.title-section': {
+          fontFamily: 'Satoshi, sans-serif',
+          fontWeight: '700',
+          fontSize: '2.25rem',
+          lineHeight: '1.1',
+          '@media (min-width: 768px)': {
+            fontSize: '3rem',
+          },
+        },
+        '.title-subsection': {
+          fontFamily: 'Satoshi, sans-serif',
+          fontWeight: '700',
+          fontSize: '1.5rem',
+          lineHeight: '1.1',
+          '@media (min-width: 768px)': {
+            fontSize: '1.875rem',
+          },
+        },
+        '.title-card': {
+          fontFamily: 'Satoshi, sans-serif',
+          fontWeight: '700',
+          fontSize: '1.25rem',
+          lineHeight: '1.1',
+        },
+        '.text-description': {
+          fontFamily: 'Inter, system-ui, sans-serif',
+          fontWeight: '300',
+          fontSize: '1.25rem',
+          lineHeight: '1.625',
+          '@media (min-width: 768px)': {
+            fontSize: '1.5rem',
+          },
+        },
+        '.text-paragraph': {
+          fontFamily: 'Inter, system-ui, sans-serif',
+          fontWeight: '400',
+          fontSize: '1.125rem',
+          lineHeight: '1.625',
+        },
+        '.text-card': {
+          fontFamily: 'Inter, system-ui, sans-serif',
+          fontWeight: '400',
+          fontSize: '1rem',
+          lineHeight: '1.625',
+        },
+        '.text-small': {
+          fontFamily: 'Inter, system-ui, sans-serif',
+          fontWeight: '400',
+          fontSize: '0.875rem',
+          lineHeight: '1.25',
+        },
+        '.text-badge': {
+          fontFamily: 'Inter, system-ui, sans-serif',
+          fontWeight: '500',
+          fontSize: '0.875rem',
+          lineHeight: '1.25',
+        },
+        '.text-button': {
+          fontFamily: 'Inter, system-ui, sans-serif',
+          fontWeight: '700',
+        },
+      }
+      addUtilities(newUtilities)
+    }
+  ]
 }

@@ -31,16 +31,16 @@
           <div class="text-center space-y-8">
             <div class="space-y-6">
               <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 backdrop-blur-sm border border-cyan-300/30 rounded-full mb-6">
-                <span class="text-cyan-300 text-lg font-semibold">✨ Hijack Dev</span>
+                <span class="text-cyan-300 text-lg font-semibold">Hijack Dev</span>
               </div>
-              <h1 class="text-5xl md:text-7xl font-black text-white leading-tight tracking-tight">
+              <h1 class="title-hero text-white">
                 Je transforme vos idées en
                 <span class="block bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-pulse">
                   solutions web performantes et bien pensées
                 </span>
               </h1>
               <div class="space-y-4">
-                <p class="text-xl md:text-2xl text-gray-200 font-light max-w-4xl mx-auto leading-relaxed">
+                <p class="text-description text-gray-200 max-w-4xl mx-auto">
                   Développeur full-stack & UI designer freelance. Je crée des expériences digitales innovantes en mêlant
                   <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent font-semibold">création, design et expérimentation</span>
                 </p>
@@ -57,7 +57,7 @@
                   <!-- Disponibilité Freelance (moved under specialization) -->
                   <div class="flex w-fit items-center gap-3 px-4 py-2 bg-gradient-to-r from-green-500/20 to-emerald-500/20 backdrop-blur-sm border border-green-400/30 rounded-full">
                     <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                    <span class="text-green-300 text-lg font-medium">Disponible immédiatement pour missions freelance</span>
+                    <span class="text-green-300 text-lg font-medium">Disponible pour missions freelance</span>
                   </div>
                 </div>
               </div>
@@ -68,14 +68,14 @@
           <div class="flex flex-col sm:flex-row gap-6 justify-center items-center pt-12">
             <NuxtLink to="/projects" class="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-2xl shadow-2xl hover:shadow-cyan-500/50 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
               <div class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span class="relative z-10 text-lg">Voir mes projets</span>
+              <span class="relative z-10 text-button text-lg">Voir mes projets</span>
               <svg class="relative z-10 w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </NuxtLink>
             <NuxtLink to="/contact" class="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-600 text-white font-bold rounded-2xl shadow-2xl hover:shadow-purple-500/50 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
               <div class="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span class="relative z-10 text-lg">Travaillons ensemble</span>
+              <span class="relative z-10 text-button text-lg">Travaillons ensemble</span>
               <svg class="relative z-10 w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -96,11 +96,11 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div class="space-y-6 animate-slide-up">
             <div class="space-y-4">
-              <h2 class="text-3xl md:text-4xl font-bold text-white">
+              <h2 class="title-section text-white">
                 Créons ensemble votre 
                 <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">projet digital</span>
               </h2>
-              <p class="text-lg text-gray-300 leading-relaxed">
+              <p class="text-paragraph text-gray-300">
                 Passionné par la tech, l'innovation et la création, je transforme vos idées en solutions concrètes, 
                 utiles et intuitives. Mon approche allie expertise technique et design centré utilisateur pour créer 
                 des expériences qui ont un véritable impact.
@@ -110,19 +110,19 @@
             <div class="grid grid-cols-2 gap-6">
               <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-xl p-4 text-center">
                 <div class="text-3xl font-bold text-cyan-400">10+</div>
-                <div class="text-sm text-gray-300">Projets réalisés</div>
+                <div class="text-small text-gray-300">Projets réalisés</div>
               </div>
               <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-xl p-4 text-center">
                 <div class="text-3xl font-bold text-cyan-400">2+</div>
-                <div class="text-sm text-gray-300">Années d'expérience</div>
+                <div class="text-small text-gray-300">Années d'expérience</div>
               </div>
               <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-xl p-4 text-center">
                 <div class="text-3xl font-bold text-cyan-400">5+</div>
-                <div class="text-sm text-gray-300">Technologies maîtrisées</div>
+                <div class="text-small text-gray-300">Technologies maîtrisées</div>
               </div>
               <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-xl p-4 text-center">
                 <div class="text-3xl font-bold text-cyan-400">24/7</div>
-                <div class="text-sm text-gray-300">Support disponible</div>
+                <div class="text-small text-gray-300">Support disponible</div>
               </div>
             </div>
 
@@ -160,7 +160,7 @@
       
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center space-y-4 mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-white">
+          <h2 class="title-section text-white">
             Mes <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">services</span>
           </h2>
           <p class="text-lg text-gray-300 max-w-2xl mx-auto">
@@ -171,7 +171,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div v-for="service in servicesList" :key="service.title" class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-purple-400/30 transition-all duration-300 group">
             <div class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{{ service.icon }}</div>
-            <h3 class="text-xl font-bold text-white mb-4">{{ service.title }}</h3>
+            <h3 class="title-card text-white mb-4">{{ service.title }}</h3>
             <p class="text-gray-300 mb-6 leading-relaxed">{{ service.description }}</p>
             <ul class="space-y-2">
               <li v-for="feature in service.features" :key="feature" class="flex items-center text-sm text-gray-300">
@@ -195,10 +195,10 @@
       
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center space-y-4 mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-white">
+          <h2 class="title-section text-white">
             Ma <span class="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">vision</span>
           </h2>
-          <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p class="text-paragraph text-gray-300 max-w-2xl mx-auto">
             Comment je travaille et ce qui guide mes projets
           </p>
         </div>
@@ -206,8 +206,8 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-purple-400/30 transition-all duration-300 group">
             <div class="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">🧪</div>
-            <h3 class="text-xl font-bold text-white mb-4">Expérimentation continue</h3>
-            <p class="text-gray-300 leading-relaxed">
+            <h3 class="title-card text-white mb-4">Expérimentation continue</h3>
+            <p class="text-card text-gray-300">
               Je crois que les meilleures idées naissent de l'expérimentation. Tester, apprendre et itérer 
               font partie intégrante de mon processus créatif.
             </p>
@@ -215,8 +215,8 @@
 
           <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-purple-400/30 transition-all duration-300 group">
             <div class="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">🎨</div>
-            <h3 class="text-xl font-bold text-white mb-4">Design centré utilisateur</h3>
-            <p class="text-gray-300 leading-relaxed">
+            <h3 class="title-card text-white mb-4">Design centré utilisateur</h3>
+            <p class="text-card text-gray-300">
               Mon objectif est de concevoir des solutions simples, utiles et efficaces. Chaque décision 
               de design est guidée par les besoins réels des utilisateurs.
             </p>
@@ -224,8 +224,8 @@
 
           <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-purple-400/30 transition-all duration-300 group">
             <div class="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">🚀</div>
-            <h3 class="text-xl font-bold text-white mb-4">Créer, apprendre, partager</h3>
-            <p class="text-gray-300 leading-relaxed">
+            <h3 class="title-card text-white mb-4">Créer, apprendre, partager</h3>
+            <p class="text-card text-gray-300">
               Le développement ne se résume pas à écrire du code. C'est créer, apprendre en continu et 
               partager ses connaissances pour faire grandir la communauté.
             </p>
@@ -236,17 +236,12 @@
 
     <!-- Recent Projects Section -->
     <section class="py-16 md:py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
-      <!-- Background Effects -->
-      <div class="absolute inset-0">
-        <div class="absolute top-1/3 right-1/3 w-96 h-96 bg-gradient-to-r from-cyan-400/20 to-blue-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-6000"></div>
-      </div>
-      
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center space-y-4 mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-white">
+          <h2 class="title-section text-white">
             Projets <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">récents</span>
           </h2>
-          <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p class="text-paragraph text-gray-300 max-w-2xl mx-auto">
             Découvrez quelques-unes de mes réalisations les plus récentes
           </p>
         </div>
@@ -254,10 +249,10 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <div v-for="project in projects" :key="project.title" class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-purple-400/30 transition-all duration-300 group">
             <div class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{{ project.emoji }}</div>
-            <h3 class="text-xl font-bold text-white mb-4">{{ project.title }}</h3>
-            <p class="text-gray-300 mb-6 leading-relaxed">{{ project.description }}</p>
+            <h3 class="title-card text-white mb-4">{{ project.title }}</h3>
+            <p class="text-card text-gray-300 mb-6">{{ project.description }}</p>
             <div class="flex flex-wrap gap-2">
-              <span v-for="tech in project.technologies" :key="tech" class="px-3 py-1 bg-primary-600/20 text-primary-300 rounded-full text-sm font-medium">
+              <span v-for="tech in project.technologies" :key="tech" class="px-3 py-1 bg-primary-600/20 text-primary-300 rounded-full text-badge">
                 {{ tech }}
               </span>
             </div>
@@ -274,21 +269,16 @@
 
     <!-- CTA Section -->
     <section class="py-16 md:py-24 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 relative overflow-hidden">
-      <!-- Background Effects -->
-      <div class="absolute inset-0">
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-cyan-400/20 to-purple-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-8000"></div>
-      </div>
-      
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-12 space-y-8">
-          <h2 class="text-3xl md:text-4xl font-bold text-white">
+          <h2 class="title-section text-white">
             Prêt à <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">démarrer</span> votre projet ?
           </h2>
           <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Discutons de vos besoins et créons ensemble quelque chose d'exceptionnel
           </p>
           <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <NuxtLink to="/contact" class="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-2xl shadow-2xl hover:shadow-cyan-500/50 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300">
+            <NuxtLink to="/contact" class="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-400 to-pink-500 text-white font-bold rounded-2xl shadow-2xl hover:shadow-cyan-500/50 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300">
               <span class="text-lg">Démarrer un projet</span>
               <svg class="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />

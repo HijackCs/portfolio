@@ -7,7 +7,7 @@
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center space-x-2 group">
             <div class="w-8 h-8 rounded-lg overflow-hidden">
-              <img src="/images/logo.png" alt="Hijack Dev - Hugo Schroder" class="w-full h-full object-cover" />
+              <img src="/favicon-96x96.png" alt="Hijack Dev - Hugo Schroder" class="w-full h-full object-cover" />
             </div>
             <div class="flex flex-col">
               <span class="font-bold text-gray-900 group-hover:text-primary-600 transition-colors leading-tight">

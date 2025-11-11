@@ -58,6 +58,6 @@ export const featuredProjects = [
 ]
 
 export const homeMeta = {
-  title: 'Accueil -  Hijack Dev | Hugo Schroder - Développeur Full-Stack & UI Designer',
-  description: 'Hijack Dev : Je transforme vos idées en solutions web performantes et bien pensées. Développeur freelance Vue.js/Nuxt.js & UI designer passionné par la création, l\'innovation et le design. Disponible immédiatement.'
+  title: 'Hijack Dev | Hugo Schroder - Développeur Full-Stack & UI Designer',
+  description: 'Hijack Dev : Je transforme vos idées en solutions web performantes et bien pensées. Développeur freelance Vue.js/Nuxt.js & UI designer passionné par la création, l\'innovation et le design.'
 }

@@ -1,0 +1,51 @@
+/* Typography utilities for consistent font usage */
+
+/* Titres principaux (H1) */
+.title-hero {
+  @apply font-heading font-black text-6xl md:text-8xl leading-tight tracking-tight;
+}
+
+/* Titres de section (H2) */
+.title-section {
+  @apply font-heading font-bold text-4xl md:text-5xl leading-tight;
+}
+
+/* Sous-titres (H3) */
+.title-subsection {
+  @apply font-heading font-bold text-2xl md:text-3xl leading-tight;
+}
+
+/* Titres de carte (H4) */
+.title-card {
+  @apply font-heading font-bold text-xl leading-tight;
+}
+
+/* Texte de description principal */
+.text-description {
+  @apply font-body text-xl md:text-2xl font-light leading-relaxed;
+}
+
+/* Texte de paragraphe standard */
+.text-paragraph {
+  @apply font-body text-lg leading-relaxed;
+}
+
+/* Texte de carte/composant */
+.text-card {
+  @apply font-body text-base leading-relaxed;
+}
+
+/* Texte petit (labels, etc.) */
+.text-small {
+  @apply font-body text-sm leading-normal;
+}
+
+/* Badge/Tag text */
+.text-badge {
+  @apply font-body text-sm font-medium;
+}
+
+/* Button text */
+.text-button {
+  @apply font-heading font-bold;
+}

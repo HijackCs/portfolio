@@ -24,8 +24,8 @@
         <div class="absolute bottom-20 left-1/4 w-12 h-12 bg-gradient-to-br from-indigo-400/30 to-purple-600/30 rounded-lg backdrop-blur-sm transform -rotate-12 animate-float delay-500"></div>
 
         <div class="relative z-10 space-y-8">
-          <h1 class="text-5xl md:text-7xl font-bold">
-            <span class="block bg-gradient-to-r from-purple-400 via-violet-500 to-indigo-600 bg-clip-text text-transparent animate-pulse">
+          <h1 class="title-hero">
+            <span class="block bg-gradient-to-r from-purple-400 via-violet-500 to-indigo-600 bg-clip-text text-transparent animate-pulse pb-5">
               Blog
             </span>
           </h1>
@@ -48,7 +48,7 @@
       <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         
         <!-- Category Filter -->
-        <div class="flex flex-wrap justify-center ">
+        <div class="flex flex-wrap justify-center">
           <button 
             v-for="category in categories" 
             :key="category"
@@ -66,7 +66,7 @@
 
         <!-- Featured Article -->
         <div v-if="featuredArticle" class="mb-20">
-          <h2 class="text-3xl font-bold text-white mb-8 text-center">Article à la une</h2>
+          <h2 class="title-section text-white mb-8 text-center">Article à la une</h2>
           <div class="group relative backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 hover:border-violet-400/30 transition-all duration-500">
             <div class="lg:flex">
               <div class="lg:w-1/2 p-8 lg:p-12 space-y-6">

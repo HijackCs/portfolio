@@ -4,10 +4,10 @@ export const profile = {
   subtitle: "Hijack Dev - Création, Innovation & Design | Disponible Immédiatement",
   location: "Nord, France",
   bio: {
-    short: "Développeur freelance full-stack & UI designer passionné par la création d'expériences digitales innovantes. J'allie expertise technique et vision créative pour transformer vos idées en solutions concrètes.",
+    short: "Développeur freelance full-stack passionné par la création d'expériences digitales innovantes. J'allie expertise technique et vision créative pour transformer vos idées en solutions concrètes.",
     long: `🧑‍💻 Qui je suis
 
-Développeur full-stack et UI designer freelance, je suis passionné par la tech, l'innovation et la création. Diplômé d'un Master Informatique Ingénierie Logiciel pour l'Internet à l'Université d'Artois, j'ai effectué mon alternance pendant 2 ans au sein de la CAF du Nord.
+Développeur full-stack freelance, je suis passionné par la tech, l'innovation et la création. Diplômé d'un Master Informatique Ingénierie Logiciel pour l'Internet à l'Université d'Artois, j'ai effectué mon alternance pendant 2 ans au sein de la CAF du Nord.
 
 Durant cette expérience, j'ai développé de A à Z des applications web avec Symfony et Vue.js, tout en perfectionnant mes compétences DevOps (CI/CD, Docker, automatisation). Cette immersion m'a permis d'acquérir une vision complète du développement, de la conception UX à la mise en production.
 

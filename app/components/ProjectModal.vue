@@ -37,7 +37,7 @@
               </span>
             </div>
             
-            <h2 class="text-4xl font-bold text-white mb-4">{{ project.title }}</h2>
+            <h2 class="title-section text-white mb-4">{{ project.title }}</h2>
             <p class="text-xl text-gray-300 leading-relaxed">{{ project.description }}</p>
           </div>
 
@@ -93,7 +93,7 @@
 
               <!-- Technologies -->
               <div class="space-y-3">
-                <h3 class="text-lg font-semibold text-white">Technologies utilisées</h3>
+                <h3 class="title-card text-white">Technologies utilisées</h3>
                 <div class="flex flex-wrap gap-2">
                   <span 
                     v-for="tech in project.technologies" 
@@ -110,19 +110,19 @@
             <div class="space-y-6">
               <!-- Impact -->
               <div v-if="project.impact" class="p-4 bg-emerald-500/10 border border-emerald-400/20 rounded-xl">
-                <h3 class="text-lg font-semibold text-emerald-300 mb-2">Impact client</h3>
+                <h3 class="title-card text-emerald-300 mb-2">Impact client</h3>
                 <p class="text-emerald-200 leading-relaxed">{{ project.impact }}</p>
               </div>
 
               <!-- Detailed Description -->
               <div v-if="project.detailedDescription" class="space-y-3">
-                <h3 class="text-lg font-semibold text-white">Description détaillée</h3>
+                <h3 class="title-card text-white">Description détaillée</h3>
                 <div class="text-gray-300 leading-relaxed whitespace-pre-line">{{ project.detailedDescription }}</div>
               </div>
 
               <!-- Features -->
               <div v-if="project.features?.length" class="space-y-3">
-                <h3 class="text-lg font-semibold text-white">Fonctionnalités principales</h3>
+                <h3 class="title-card text-white">Fonctionnalités principales</h3>
                 <ul class="space-y-2">
                   <li v-for="feature in project.features" :key="feature" class="flex items-start gap-3 text-gray-300">
                     <svg class="w-5 h-5 text-emerald-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -135,7 +135,7 @@
 
               <!-- Challenges -->
               <div v-if="project.challenges?.length" class="space-y-3">
-                <h3 class="text-lg font-semibold text-white">Défis techniques</h3>
+                <h3 class="title-card text-white">Défis techniques</h3>
                 <ul class="space-y-2">
                   <li v-for="challenge in project.challenges" :key="challenge" class="flex items-start gap-3 text-gray-300">
                     <svg class="w-5 h-5 text-orange-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,7 +148,7 @@
 
               <!-- Results -->
               <div v-if="project.results?.length" class="space-y-3">
-                <h3 class="text-lg font-semibold text-white">Résultats obtenus</h3>
+                <h3 class="title-card text-white">Résultats obtenus</h3>
                 <ul class="space-y-2">
                   <li v-for="result in project.results" :key="result" class="flex items-start gap-3 text-gray-300">
                     <svg class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">

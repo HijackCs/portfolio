@@ -35,7 +35,7 @@ export const faqItems = [
   },
   {
     question: "Quelle est votre expérience ?",
-    answer: "Développeur full-stack & UI designer avec 2 ans d'expérience en alternance au sein d'une institution publique. Diplômé d'un Master Informatique, j'ai développé des applications complètes avec Symfony, Vue.js et perfectionné mes compétences DevOps."
+    answer: "Développeur full-stack avec 2 ans d'expérience en alternance au sein d'une institution publique. Diplômé d'un Master Informatique, j'ai développé des applications complètes avec Symfony, Vue.js et ai pu perfectionner mes compétences DevOps."
   },
   {
     question: "Comment garantissez-vous la qualité ?",
