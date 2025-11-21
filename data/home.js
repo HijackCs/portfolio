@@ -50,7 +50,7 @@ export const featuredProjects = [
     technologies: ['Java', 'Quarkus', 'Android']
   },
   {
-    title: 'Portfolio Hijack Dev',
+    title: 'Portfolio personnel',
     description: 'Vitrine professionnelle moderne avec Nuxt.js et design 3D avec une UX optimisée.',
     emoji: '💼',
     technologies: ['Nuxt.js', 'Vue.js', 'Tailwind CSS', 'Markdown']
@@ -58,6 +58,6 @@ export const featuredProjects = [
 ]
 
 export const homeMeta = {
-  title: 'Hijack Dev | Hugo Schroder - Développeur Full-Stack & UI Designer',
-  description: 'Hijack Dev : Je transforme vos idées en solutions web performantes et bien pensées. Développeur freelance Vue.js/Nuxt.js & UI designer passionné par la création, l\'innovation et le design.'
+  title: 'Hugo Schroder - Développeur Full-Stack & UI Designer',
+  description: 'Je transforme vos idées en solutions web performantes et bien pensées. Développeur freelance Vue.js/Nuxt.js & UI designer passionné par la création, l\'innovation et le design.'
 }

@@ -30,10 +30,6 @@ export const socialLinks = [
 
 export const faqItems = [
   {
-    question: "Qu'est-ce que Hijack Dev ?",
-    answer: "Hijack Dev est ma marque personnelle centrée sur la création, l'expérimentation, l'innovation et le design. C'est ma vision du développement : transformer des idées en solutions concrètes, utiles et bien pensées."
-  },
-  {
     question: "Quelle est votre expérience ?",
     answer: "Développeur full-stack avec 2 ans d'expérience en alternance au sein d'une institution publique. Diplômé d'un Master Informatique, j'ai développé des applications complètes avec Symfony, Vue.js et ai pu perfectionner mes compétences DevOps."
   },
@@ -56,6 +52,6 @@ export const faqItems = [
 ]
 
 export const contactMeta = {
-  title: 'Contact - Hijack Dev | Hugo Schroder - Transformons votre idée en réalité',
+  title: 'Contact - Hugo Schroder - Transformons votre idée en réalité',
   description: 'Vous avez une idée de projet ? Discutons-en ensemble. Développeur freelance full-stack & UI designer, je transforme vos idées en produits concrets, performants et bien conçus. Réponse sous 24h garantie.'
 }

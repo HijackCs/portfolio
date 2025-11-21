@@ -25,9 +25,6 @@
         <!-- Glassmorphism Card -->
         <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in">
           <div class="text-center space-y-6">
-            <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 backdrop-blur-sm border border-cyan-300/30 rounded-full">
-              <span class="text-cyan-300 text-lg font-medium">Hijack Dev - À propos</span>
-            </div>
             <h1 class="title-hero text-white">
               {{ profileData.name }}
               <span class="block bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-pulse pb-5">
@@ -245,19 +242,19 @@ const profileData = ref(profile)
 
 // SEO Meta tags
 useHead({
-  title: `À propos - Hijack Dev | Hugo Schroder - Développeur Full-Stack & UI Designer`,
+  title: `À propos - Hugo Schroder - Développeur Full-Stack & UI Designer`,
   meta: [
     {
       name: 'description',
-      content: 'Hijack Dev : Passionné par la création, l\'innovation et le design. Développeur full-stack & UI designer freelance avec 2 ans d\'expérience. Je transforme vos idées en solutions concrètes et bien pensées.'
+      content: 'Passionné par la création, l\'innovation et le design. Développeur full-stack & UI designer freelance avec 2 ans d\'expérience. Je transforme vos idées en solutions concrètes et bien pensées.'
     },
     {
       property: 'og:title',
-      content: 'À propos - Hijack Dev | Hugo Schroder - Développeur Full-Stack & UI Designer'
+      content: 'À propos - Hugo Schroder - Développeur Full-Stack & UI Designer'
     },
     {
       property: 'og:description',
-      content: 'Hijack Dev : Passionné par la création, l\'innovation et le design. Développeur full-stack & UI designer freelance avec 2 ans d\'expérience. Je transforme vos idées en solutions concrètes et bien pensées.'
+      content: 'Passionné par la création, l\'innovation et le design. Développeur full-stack & UI designer freelance avec 2 ans d\'expérience. Je transforme vos idées en solutions concrètes et bien pensées.'
     },
     {
       property: 'og:type',

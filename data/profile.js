@@ -1,7 +1,7 @@
 export const profile = {
   name: "Hugo Schroder",
   title: "Développeur Full-Stack & UI Designer",
-  subtitle: "Hijack Dev - Création, Innovation & Design | Disponible Immédiatement",
+  subtitle: "Création, Innovation & Design | Disponible Immédiatement",
   location: "Nord, France",
   bio: {
     short: "Développeur freelance full-stack passionné par la création d'expériences digitales innovantes. J'allie expertise technique et vision créative pour transformer vos idées en solutions concrètes.",

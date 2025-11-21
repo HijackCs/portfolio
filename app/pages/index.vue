@@ -30,9 +30,6 @@
           <!-- Hero Content -->
           <div class="text-center space-y-8">
             <div class="space-y-6">
-              <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 backdrop-blur-sm border border-cyan-300/30 rounded-full mb-6">
-                <span class="text-cyan-300 text-lg font-semibold">Hijack Dev</span>
-              </div>
               <h1 class="title-hero text-white">
                 Je transforme vos idées en
                 <span class="block bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-pulse">

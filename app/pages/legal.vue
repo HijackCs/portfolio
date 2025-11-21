@@ -37,25 +37,28 @@
               <span>👤</span> Éditeur du site
             </h2>
             <div class="space-y-3 text-gray-300 leading-relaxed">
-              <p><strong class="text-white">Nom :</strong> Hugo Schroder</p>
-              <p><strong class="text-white">Marque :</strong> Hijack Dev</p>
-              <p><strong class="text-white">Statut :</strong> En cours de création (freelance)</p>
+              <p><strong class="text-white">Directeur de publication :</strong> Hugo Schroder</p>
               <p><strong class="text-white">Email :</strong> <a href="mailto:contact@hugoschroder.dev" class="text-cyan-400 hover:text-cyan-300 transition-colors">contact@hugoschroder.dev</a></p>
               <p><strong class="text-white">Site web :</strong> <a href="https://hugoschroder.dev" class="text-cyan-400 hover:text-cyan-300 transition-colors">https://hugoschroder.dev</a></p>
-              <p class="text-sm text-gray-400 mt-4">
-                <em>Note : Les informations de SIRET et adresse seront ajoutées dès l'immatriculation officielle.</em>
-              </p>
+              
+              <div class="mt-6 pt-6 border-t border-white/10">
+                <p><strong class="text-white">Bénéficiaire d'un CAPE</strong> (Contrat d'Appui au Projet d'Entreprise) jusqu'au 2 novembre 2026</p>
+                <p class="mt-2"><strong class="text-white">Structure d'accompagnement :</strong> Espace des Entrepreneurs - Incubatest</p>
+                <p><strong class="text-white">SIRET :</strong> 418 541 553 000 32</p>
+                <p><strong class="text-white">TVA intracommunautaire :</strong> FR 23 418 541 553</p>
+                <p><strong class="text-white">Code NAF :</strong> 8899B</p>
+              </div>
             </div>
           </div>
 
-          <!-- Directeur de publication -->
+          <!-- Réalisation du site -->
           <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8">
             <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
-              <span>📝</span> Directeur de publication
+              <span>🎨</span> Réalisation du site
             </h2>
             <div class="space-y-3 text-gray-300 leading-relaxed">
-              <p><strong class="text-white">Responsable :</strong> Hugo Schroder</p>
-              <p><strong class="text-white">Contact :</strong> <a href="mailto:contact@hugoschroder.dev" class="text-cyan-400 hover:text-cyan-300 transition-colors">contact@hugoschroder.dev</a></p>
+              <p><strong class="text-white">Conception et développement :</strong> Hugo Schroder</p>
+              <p><strong class="text-white">Technologies :</strong> Nuxt.js, Vue.js, TailwindCSS</p>
             </div>
           </div>
 
@@ -79,7 +82,7 @@
             <div class="space-y-4 text-gray-300 leading-relaxed">
               <p>
                 L'ensemble du contenu de ce site (textes, images, vidéos, design, code source) est la propriété exclusive 
-                de <strong class="text-white">Hugo Schroder - Hijack Dev</strong>, sauf mention contraire.
+                de <strong class="text-white">Hugo Schroder</strong>, sauf mention contraire.
               </p>
               <p>
                 Toute reproduction, distribution, modification, adaptation, retransmission ou publication de ces différents 
@@ -227,19 +230,19 @@
 <script setup>
 // SEO Meta tags
 useHead({
-  title: 'Mentions Légales - Hijack Dev | Hugo Schroder',
+  title: 'Mentions Légales - Hugo Schroder',
   meta: [
     {
       name: 'description',
-      content: 'Mentions légales du site Hijack Dev - Hugo Schroder. Informations sur l\'éditeur, l\'hébergement, la protection des données personnelles (RGPD) et les conditions d\'utilisation.'
+      content: 'Mentions légales du site Hugo Schroder. Informations sur l\'éditeur, l\'hébergement, la protection des données personnelles (RGPD) et les conditions d\'utilisation.'
     },
     {
       property: 'og:title',
-      content: 'Mentions Légales - Hijack Dev | Hugo Schroder'
+      content: 'Mentions Légales - Hugo Schroder'
     },
     {
       property: 'og:description',
-      content: 'Mentions légales du site Hijack Dev - Hugo Schroder. Informations légales et protection des données.'
+      content: 'Mentions légales du site Hugo Schroder. Informations légales et protection des données.'
     },
     {
       name: 'robots',

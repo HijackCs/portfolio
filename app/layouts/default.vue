@@ -7,13 +7,12 @@
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center space-x-2 group">
             <div class="w-8 h-8 rounded-lg overflow-hidden">
-              <img src="/favicon-96x96.png" alt="Hijack Dev - Hugo Schroder" class="w-full h-full object-cover" />
+              <img src="/favicon-96x96.png" alt="Hugo Schroder" class="w-full h-full object-cover" />
             </div>
             <div class="flex flex-col">
               <span class="font-bold text-gray-900 group-hover:text-primary-600 transition-colors leading-tight">
-                Hijack Dev
+                Hugo Schroder
               </span>
-              <span class="text-xs text-gray-500 leading-tight">Hugo Schroder</span>
             </div>
           </NuxtLink>
 
@@ -188,7 +187,7 @@
 
         <div class="border-t border-gray-800 mt-8 pt-8 text-center space-y-2">
           <p class="text-gray-400 text-sm">
-            © {{ new Date().getFullYear() }} Hugo Schroder - Hijack Dev. Tous droits réservés.
+            © {{ new Date().getFullYear() }} Hugo Schroder. Tous droits réservés.
           </p>
           <p class="text-gray-500 text-xs">
             <NuxtLink to="/legal" class="hover:text-gray-300 transition-colors">Mentions légales</NuxtLink>
