@@ -7,9 +7,14 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
   ],
-  
-  
-  
+
+  mdc: {
+    highlight: {
+      theme: 'github-dark',
+      langs: ['javascript', 'typescript', 'vue', 'css', 'html', 'bash', 'json', 'markdown', 'yaml']
+    }
+  },
+
   app: {
     head: {
       title: 'Hugo Schroder - Développeur Web full-Stack',

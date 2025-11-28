@@ -47,6 +47,12 @@
               Blog
             </NuxtLink>
             <NuxtLink 
+              to="/simulateur-prix" 
+              class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-medium rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
+            >
+              Simulateur
+            </NuxtLink>
+            <NuxtLink 
               to="/contact" 
               class="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-colors duration-200"
             >
@@ -102,6 +108,13 @@
               Blog
             </NuxtLink>
             <NuxtLink 
+              to="/simulateur-prix" 
+              class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-medium rounded-lg transition-all duration-200 w-full justify-center shadow-md"
+              @click="mobileMenuOpen = false"
+            >
+              Simulateur de prix
+            </NuxtLink>
+            <NuxtLink 
               to="/contact" 
               class="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-colors duration-200 w-full justify-center"
               @click="mobileMenuOpen = false"
@@ -143,6 +156,7 @@
               <NuxtLink to="/about" class="text-gray-400 hover:text-white transition-colors text-sm">À propos</NuxtLink>
               <NuxtLink to="/projects" class="text-gray-400 hover:text-white transition-colors text-sm">Portfolio</NuxtLink>
               <NuxtLink to="/blog" class="text-gray-400 hover:text-white transition-colors text-sm">Blog</NuxtLink>
+              <NuxtLink to="/simulateur-prix" class="text-gray-400 hover:text-cyan-300 transition-colors text-sm font-medium">Simulateur de prix</NuxtLink>
               <NuxtLink to="/contact" class="text-gray-400 hover:text-white transition-colors text-sm">Contact</NuxtLink>
               <NuxtLink to="/legal" class="text-gray-400 hover:text-white transition-colors text-sm">Mentions légales</NuxtLink>
             </div>
