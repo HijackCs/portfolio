@@ -82,9 +82,3 @@ npm run preview
 ## Credits
 
 Created by [Hugo Schroder](https://hugoschroder.dev)
-
----
-
-## License
-
-[MIT](LICENSE)

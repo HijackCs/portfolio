@@ -24,7 +24,7 @@
             <h1 class="title-hero text-white">
               Estimez le prix de votre
               <span class="block bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-pulse">
-                site web en 60 secondes
+                site web en 2 minutes !
               </span>
             </h1>
             <p class="text-description text-gray-200 max-w-4xl mx-auto">
