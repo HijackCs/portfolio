@@ -1,6 +1,51 @@
 export const projects = [
+
   {
     id: 1,
+    title: "Site démo artisan - Atelier Lens Plomberie",
+    description: "Site vitrine de démonstration pour artisans, pensé comme un template réutilisable et personnalisable pour chaque métier.",
+    impact: "Un support clair pour présenter l'offre de base et projeter les artisans sur une présence en ligne professionnelle.",
+    image: "/images/projet-demo.png",
+    images: [
+      "/images/projet-demo.png",
+      "/images/projet-demo-services.png"
+
+    ],
+    technologies: ["Nuxt.js", "Tailwind CSS"],
+    category: "Site Vitrine",
+    sector: "Freelance",
+    freelance: true,
+    status: "Terminé",
+    year: 2025,
+    client: "Démo interne",
+    duration: "1 semaine",
+    features: [
+      "Architecture multi-pages (accueil, services, réalisations, contact)",
+      "Sections de réassurance et preuves sociales",
+      "CTA orientés conversion (devis, appel)",
+      "Design responsive et soigné",
+      "Mode sombre"
+    ],
+    detailedDescription: `Cette démo a été conçue pour aider les artisans à se projeter dans un site vitrine moderne, clair et orienté conversion. Le contenu est structuré autour des besoins clés : mise en avant des services, réalisations, avis clients et appels à l'action visibles.
+
+Le template sert de base pour mon offre standard et est facilement personnalisable (couleurs, contenus, images, zone d'intervention) afin de s'adapter à chaque métier.`,
+    challenges: [
+      "Créer un template adaptable à différents corps de métiers",
+      "Optimiser la hiérarchie d'information pour la conversion",
+      "Assurer une excellente lisibilité mobile",
+      "Mettre en valeur les preuves sociales et la réassurance"
+    ],
+    results: [
+      "Template prêt à déployer pour les artisans",
+      "Parcours utilisateur clair et orienté demande de devis",
+      "Base solide pour des variantes sectorielles"
+    ],
+    links: {
+      demo: "https://demo.hugoschroder.dev/"
+    }
+  },
+  {
+    id: 2,
     title: "Application Web - Gestion interne",
     description: "Application web de gestion développée dans le cadre de mon alternance avec Symfony et Vue.js pour optimiser les processus internes + divers projets comptable.",
     impact: "Application interne qui a réduit de 30% le temps de saisie des heures par les agents et automatisé la génération des rapports mensuels, améliorant significativement l'efficacité opérationnelle.",
@@ -43,7 +88,7 @@ Le backend Symfony assure la robustesse et la sécurité des données, avec une 
     links: {}
   },
   {
-    id: 2,
+    id: 3,
     title: "GFaim",
     description: "Application mobile de gestion des repas et du frigo avec authentification et API REST sécurisée.",
     impact: "Réduction du gaspillage alimentaire grâce à la gestion des stocks et aux suggestions personnalisées.",
@@ -78,7 +123,7 @@ Le backend Symfony assure la robustesse et la sécurité des données, avec une 
     }
   },
   {
-    id: 3,
+    id: 4,
     title: "Portfolio Personnel - Site Vitrine",
     description: "Site portfolio moderne avec Nuxt.js, design 3D, système de blog intégré et approche data-driven pour présenter mes compétences.",
     image: "/images/portfolio.png",
@@ -122,7 +167,7 @@ L'optimisation SEO et les performances garantissent une excellente visibilité e
     }
   },
   {
-    id: 4,
+    id: 5,
     title: "AlternantApp",
     description: "Application pour enregistrer facilement les heures réalisées chaque jour en alternance, avec historique détaillé et gestion automatique du bonus/malus.",
     impact: "Gain de ~15 min/jour sur la saisie et suppression des erreurs de calcul grâce à l'automatisation.",
@@ -165,7 +210,7 @@ Les données sont stockées localement pour garantir la confidentialité et perm
     }
   },
   {
-    id: 5,
+    id: 6,
     title: "POC Quasar",
     description: "Proof of concept démontrant comment Quasar permet de créer des applications web et mobiles performantes à partir d’une base de code unique.",
     image: "/images/poc.png",
@@ -207,8 +252,9 @@ Il a été réalisé dans le cadre de mon master, le but était de mettre en ava
     }
   },
   
+  
   {
-    id: 6,
+    id: 7,
     title: "Projet Domotique IoT – Raspberry & Zigbee",
     description: "Mise en place d’un système domotique personnel basé sur Raspberry Pi, Arduino et réseau Zigbee, supervisé via Home Assistant. Intégration de capteurs (température, luminosité, météo), automatisations (allumage, alertes, scénarios) et configuration du réseau local sécurisé.",
     impact: "Baisse d'environ 20% de la consommation énergétique grâce aux automatisations et à la supervision centralisée.",
@@ -230,10 +276,7 @@ Il a été réalisé dans le cadre de mon master, le but était de mettre en ava
       "Configuration réseau local sécurisé"
     ],
     images: [
-      "/images/Home-Assistant.png",
-      "/images/domotique-dashboard.png",
-      "/images/domotique-sensors.png",
-      "/images/domotique-automation.png"
+      "/images/Home-Assistant.png"
     ],
     detailedDescription: `Ce projet domotique personnel combine plusieurs technologies IoT pour créer un écosystème connecté intelligent. Basé sur Raspberry Pi comme hub central, il intègre des capteurs Arduino et ESP32 communicant via protocole Zigbee.
 

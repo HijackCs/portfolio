@@ -45,18 +45,29 @@
             <!-- Left Column: Images Carousel -->
             <div class="space-y-6">
               <!-- Main Image -->
-              <div class="relative aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 border border-white/10">
+              <div
+                class="relative aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 border border-white/10 cursor-zoom-in"
+                @click="openImagePreview"
+              >
                 <img 
                   :src="project.images?.[currentImageIndex] || project.image" 
                   :alt="project.title"
                   class="w-full h-full object-cover"
                   @error="handleImageError"
                 >
+                <button
+                  type="button"
+                  class="absolute bottom-4 right-4 bg-black/60 hover:bg-black/80 text-white text-xs px-3 py-2 rounded-full transition-all duration-300 backdrop-blur-sm"
+                  @click.stop="openImagePreview"
+                >
+                  Agrandir
+                </button>
                 
                 <!-- Navigation Arrows -->
                 <div v-if="project.images && project.images.length > 1" class="absolute inset-0 flex items-center justify-between p-4">
                   <button 
                     @click="previousImage"
+                    @click.stop
                     class="w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
                   >
                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,6 +76,7 @@
                   </button>
                   <button 
                     @click="nextImage"
+                    @click.stop
                     class="w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
                   >
                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -210,6 +222,31 @@
       </div>
     </div>
   </div>
+
+  <div
+    v-if="isImagePreviewOpen"
+    class="fixed inset-0 z-[60] flex items-center justify-center p-4"
+    @click="closeImagePreview"
+  >
+    <div class="absolute inset-0 bg-black/90 backdrop-blur-sm"></div>
+    <div class="relative max-w-6xl w-full">
+      <button
+        type="button"
+        class="absolute -top-5 -right-5 w-11 h-11 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300"
+        @click.stop="closeImagePreview"
+      >
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <img
+        :src="activeImageSrc"
+        :alt="project?.title || 'Aperçu'"
+        class="w-full max-h-[85vh] object-contain rounded-2xl border border-white/20 shadow-2xl bg-black/20"
+        @click.stop
+      >
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -227,15 +264,31 @@ const props = defineProps({
 const emit = defineEmits(['close'])
 
 const currentImageIndex = ref(0)
+const isImagePreviewOpen = ref(false)
+
+const activeImageSrc = computed(() => {
+  return props.project?.images?.[currentImageIndex.value] || props.project?.image || ''
+})
 
 // Reset image index when project changes
 watch(() => props.project, () => {
   currentImageIndex.value = 0
+  isImagePreviewOpen.value = false
 })
 
 // Close modal
 const closeModal = () => {
   emit('close')
+}
+
+const openImagePreview = () => {
+  if (activeImageSrc.value) {
+    isImagePreviewOpen.value = true
+  }
+}
+
+const closeImagePreview = () => {
+  isImagePreviewOpen.value = false
 }
 
 // Image navigation
@@ -263,7 +316,11 @@ const handleImageError = (event) => {
 onMounted(() => {
   const handleEscape = (event) => {
     if (event.key === 'Escape' && props.isOpen) {
-      closeModal()
+      if (isImagePreviewOpen.value) {
+        closeImagePreview()
+      } else {
+        closeModal()
+      }
     }
   }
   
