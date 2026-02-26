@@ -55,6 +55,8 @@
                 <img 
                   :src="featuredArticle.image" 
                   :alt="featuredArticle.title"
+                  loading="lazy"
+                  decoding="async"
                   class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent md:bg-gradient-to-r"></div>
@@ -112,6 +114,8 @@
                 <img 
                   :src="article.image" 
                   :alt="article.title"
+                  loading="lazy"
+                  decoding="async"
                   class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
@@ -267,12 +271,19 @@ const formatDate = (dateString) => {
 
 // SEO
 useHead({
-  title: 'Blog - Hugo Schroder',
+  title: 'Blog Développement Web & Freelance | Hugo Schroder',
   meta: [
-    { name: 'description', content: 'Découvrez mes articles sur le développement web, Nuxt.js, Vue.js et mon parcours de freelance. Conseils, tutoriels et retours d\'expérience.' },
-    { property: 'og:title', content: 'Blog - Hugo Schroder' },
-    { property: 'og:description', content: 'Articles sur le développement web, Nuxt.js, Vue.js et le freelance' },
-    { property: 'og:type', content: 'website' }
+    { name: 'description', content: 'Articles sur le développement web, le SEO technique, Nuxt.js et la vie de freelance. Conseils, retours d\'expérience et guides pratiques.' },
+    { property: 'og:title', content: 'Blog Développement Web & Freelance | Hugo Schroder' },
+    { property: 'og:description', content: 'Guides et retours d\'expérience sur le développement web, Nuxt.js et le SEO.' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://hugoschroder.dev/blog' },
+    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:title', content: 'Blog Développement Web & Freelance | Hugo Schroder' },
+    { name: 'twitter:description', content: 'Guides et retours d\'expérience sur le développement web, Nuxt.js et le SEO.' }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://hugoschroder.dev/blog' }
   ]
 })
 </script>

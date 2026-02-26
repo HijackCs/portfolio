@@ -1,25 +1,8 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
-      <!-- Animated Background -->
-      <div class="absolute inset-0">
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-purple-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob"></div>
-        <div class="absolute bottom-1/3 right-1/4 w-96 h-96 bg-gradient-to-r from-cyan-400/20 to-blue-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-2000"></div>
-        <div class="absolute top-1/2 left-1/2 w-96 h-96 bg-gradient-to-r from-purple-400/20 to-pink-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-4000"></div>
-        <div class="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]"></div>
-      </div>
-      
-      <!-- 3D Floating Elements -->
-      <div class="absolute top-20 left-20 transform-gpu">
-        <div class="w-24 h-24 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-3xl shadow-2xl animate-float transform rotate-45 hover:rotate-90 transition-transform duration-700"></div>
-      </div>
-      <div class="absolute bottom-32 right-20 transform-gpu">
-        <div class="w-20 h-20 bg-gradient-to-br from-purple-400 to-pink-600 rounded-2xl shadow-2xl animate-float-reverse transform -rotate-12 hover:rotate-45 transition-transform duration-700" style="animation-delay: 1.5s;"></div>
-      </div>
-
-      <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-        <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in">
+    <AnimatedHero min-height="min-h-screen" floating="large">
+      <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in">
           <div class="text-center space-y-6">
             <h1 class="title-hero text-white">
               Des idées transformées en
@@ -32,9 +15,8 @@
               <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent font-semibold">expériences digitales performantes</span>
             </p>
           </div>
-        </div>
       </div>
-    </section>
+    </AnimatedHero>
 
     <!-- Projects Grid -->
     <section class="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
@@ -43,6 +25,15 @@
         <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-cyan-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-2000"></div>
       </div>
       <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+          <p class="text-paragraph text-gray-300">
+            Voici une sélection de projets web, mobiles et IoT réalisés pour des entreprises, des institutions et des projets personnels.
+            Chaque réalisation met l’accent sur la performance, la clarté des interfaces et la valeur métier : sites vitrines,
+            applications web sur-mesure, SEO local et automatisations. Si vous cherchez un développeur freelance pour un
+            projet solide et bien structuré, vous êtes au bon endroit !
+          </p>
+        </div>
+
         <div class="flex flex-wrap justify-center gap-4 mb-12">
           <button 
             v-for="category in categories" 
@@ -59,17 +50,19 @@
           </button>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
           <div 
             v-for="project in filteredProjects" 
             :key="project.id"
-            class="group relative backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl overflow-hidden hover:bg-white/20 hover:border-cyan-400/50 transition-all duration-500 hover:scale-105 cursor-pointer"
+            class="group relative flex h-full md:h-[49rem] flex-col backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl overflow-hidden hover:bg-white/20 hover:border-cyan-400/50 transition-all duration-500 hover:scale-105 cursor-pointer"
             @click="openProjectModal(project)"
           >
             <div class="relative h-64 overflow-hidden">
               <img 
                 :src="project.image" 
                 :alt="project.title"
+                loading="lazy"
+                decoding="async"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               >
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
@@ -84,41 +77,44 @@
               </div>
             </div>
             
-            <div class="p-8 space-y-6">
-              <div class="space-y-4">
-                <h4 class="title-card text-white group-hover:text-cyan-300 transition-colors">
+            <div class="p-8 pb-7 flex flex-1 flex-col">
+              <div class="space-y-4 flex-1">
+                <h4 class="title-card text-white group-hover:text-cyan-300 transition-colors line-clamp-2 min-h-[3.75rem]">
                   {{ project.title }}
                 </h4>
-                <p class="text-card text-gray-300">
+                <p class="text-card text-gray-300 line-clamp-3 h-[5.25rem]">
                   {{ project.description }}
                 </p>
-                <div v-if="project.impact" class="p-3 bg-cyan-500/10 border border-cyan-400/20 rounded-lg">
-                  <p class="text-cyan-300 text-small">
+              </div>
+
+              <div class="space-y-5">
+                <div v-if="project.impact" class="h-[6.5rem] p-2.5 bg-cyan-500/10 border border-cyan-400/20 rounded-lg overflow-hidden">
+                  <p class="text-cyan-300 text-small leading-snug line-clamp-3">
                     <span class="font-semibold">Impact client :</span> {{ project.impact }}
                   </p>
                 </div>
-              </div>
-              
-              <div class="flex flex-wrap gap-2">
-                <span 
-                  v-for="tech in project.technologies.slice(0, 4)" 
-                  :key="tech"
-                  class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-lg text-badge border border-blue-400/30"
-                >
-                  {{ tech }}
-                </span>
-                <span v-if="project.technologies.length > 4" class="px-3 py-1 bg-gray-500/20 text-gray-300 rounded-lg text-badge border border-gray-400/30">
-                  +{{ project.technologies.length - 4 }}
-                </span>
-              </div>
-              
-              <div class="pt-4">
-                <button 
-                  @click.stop="openProjectModal(project)"
-                  class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-3 rounded-xl font-medium hover:from-cyan-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 text-center"
-                >
-                  <span class="text-button">Voir les détails</span>
-                </button>
+
+                <div class="h-[2.5rem] flex flex-wrap content-start gap-2 overflow-hidden">
+                  <span 
+                    v-for="tech in project.technologies.slice(0, 4)" 
+                    :key="tech"
+                    class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-lg text-badge border border-blue-400/30"
+                  >
+                    {{ tech }}
+                  </span>
+                  <span v-if="project.technologies.length > 4" class="px-3 py-1 bg-gray-500/20 text-gray-300 rounded-lg text-badge border border-gray-400/30">
+                    +{{ project.technologies.length - 4 }}
+                  </span>
+                </div>
+
+                <div class="pt-2">
+                  <button 
+                    @click.stop="openProjectModal(project)"
+                    class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-3 rounded-xl font-medium hover:from-cyan-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 text-center"
+                  >
+                    <span class="text-button">Voir les détails</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -239,12 +235,58 @@ const closeModal = () => {
 
 // SEO Meta tags
 useHead({
-  title: 'Portfolio - Hugo Schroder | Développeur Freelance Vue.js/Nuxt.js',
+  title: 'Projets & Portfolio | Hugo Schroder - Développeur Web Freelance',
   meta: [
     {
       name: 'description',
-      content: 'Portfolio de Hugo Schroder, développeur freelance Vue.js/Nuxt.js. Projets web, mobile et IoT avec impact client mesuré. Disponible pour vos projets.'
+      content: 'Portfolio de Hugo Schroder : sites vitrines, applications web, SEO local et projets techniques. Découvrez des réalisations orientées performance et conversion.'
+    },
+    { property: 'og:title', content: 'Projets & Portfolio | Hugo Schroder' },
+    { property: 'og:description', content: 'Découvrez des projets web, mobile et IoT conçus pour la performance, le SEO et la conversion.' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://hugoschroder.dev/projects' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Projets & Portfolio | Hugo Schroder' },
+    { name: 'twitter:description', content: 'Sites vitrines, applications web, SEO local et projets techniques.' },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://hugoschroder.dev/projects' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://hugoschroder.dev' },
+          { '@type': 'ListItem', position: 2, name: 'Projets', item: 'https://hugoschroder.dev/projects' }
+        ]
+      })
     }
   ]
 })
 </script>
+
+<style scoped>
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+</style>

@@ -1,43 +1,21 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
-      <!-- Animated Background -->
-      <div class="absolute inset-0">
-        <!-- Gradient Orbs -->
-        <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-purple-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob"></div>
-        <div class="absolute bottom-1/3 left-1/4 w-96 h-96 bg-gradient-to-r from-cyan-400/20 to-blue-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-2000"></div>
-        <div class="absolute top-1/2 left-1/2 w-96 h-96 bg-gradient-to-r from-purple-400/20 to-pink-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-4000"></div>
-        
-        <!-- Grid Pattern -->
-        <div class="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]"></div>
-      </div>
-      
-      <!-- 3D Floating Elements -->
-      <div class="absolute top-20 right-20 transform-gpu">
-        <div class="w-20 h-20 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-2xl shadow-2xl animate-float transform rotate-12 hover:rotate-45 transition-transform duration-700"></div>
-      </div>
-      <div class="absolute bottom-32 left-20 transform-gpu">
-        <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-600 rounded-full shadow-2xl animate-float-reverse transform -rotate-12 hover:rotate-45 transition-transform duration-700" style="animation-delay: 1s;"></div>
-      </div>
-
-      <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-        <!-- Glassmorphism Card -->
-        <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in">
-          <div class="text-center space-y-6">
-            <h1 class="title-hero text-white">
-              {{ profileData.name }}
-              <span class="block bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-pulse pb-5">
-                {{ profileData.title }}
-              </span>
-            </h1>
-            <p class="text-description text-gray-200 max-w-4xl mx-auto">
-              {{ profileData.bio.short }}
-            </p>
-          </div>
+    <AnimatedHero min-height="min-h-screen" floating="large">
+      <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in">
+        <div class="text-center space-y-6">
+          <h1 class="title-hero text-white">
+            {{ profileData.name }}
+            <span class="block bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-pulse pb-5">
+              {{ profileData.title }}
+            </span>
+          </h1>
+          <p class="text-description text-gray-200 max-w-4xl mx-auto">
+            {{ profileData.bio.short }}
+          </p>
         </div>
       </div>
-    </section>
+    </AnimatedHero>
 
     <!-- Story Section -->
     <section class="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
@@ -81,6 +59,27 @@
                   Mon approche combine expertise technique et design centré utilisateur. Chaque projet est une opportunité 
                   de créer quelque chose d'unique, performant et bien pensé.
                 </p>
+              </div>
+
+              <!-- Traduction Business -->
+              <div class="space-y-4">
+                <h3 class="title-subsection text-white flex items-center gap-3">
+                  <span>📌</span> Ce que ça change pour votre activité
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-xl p-4">
+                    <p class="text-sm font-semibold text-cyan-300">Plus de clarté</p>
+                    <p class="text-sm text-gray-300 mt-2">Un plan concret, des priorités nettes et un budget lisible.</p>
+                  </div>
+                  <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-xl p-4">
+                    <p class="text-sm font-semibold text-blue-300">Plus d'efficacité</p>
+                    <p class="text-sm text-gray-300 mt-2">Des choix techniques fiables pour livrer plus vite et mieux.</p>
+                  </div>
+                  <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-xl p-4">
+                    <p class="text-sm font-semibold text-purple-300">Plus de résultats</p>
+                    <p class="text-sm text-gray-300 mt-2">Un site pensé pour générer des contacts, pas juste être joli.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -212,7 +211,8 @@
               Travaillons ensemble !
             </h2>
             <p class="text-description opacity-90 max-w-3xl mx-auto">
-              Vous avez un projet en tête ? Discutons de vos besoins et créons quelque chose d'extraordinaire ensemble.
+              Vous avez une idée, un besoin de refonte ou un projet plus technique ?
+              On définit la meilleure première version pour avancer vite et proprement.
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
               <NuxtLink to="/contact" class="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-600 text-white font-bold rounded-2xl shadow-2xl hover:shadow-purple-500/50 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
@@ -222,9 +222,8 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </NuxtLink>
-              <NuxtLink to="/projects" class="group relative inline-flex items-center px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-2xl shadow-xl hover:bg-white/20 hover:border-purple-400/50 hover:shadow-purple-500/25 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300">
-                <span class="text-lg">Voir mes projets</span>
-                <div class="ml-3 w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full animate-pulse"></div>
+              <NuxtLink to="/simulateur-prix" class="group relative inline-flex items-center px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-2xl shadow-xl hover:bg-white/20 hover:border-purple-400/50 hover:shadow-purple-500/25 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300">
+                <span class="text-lg">Estimer mon budget</span>
               </NuxtLink>
             </div>
           </div>
@@ -242,24 +241,31 @@ const profileData = ref(profile)
 
 // SEO Meta tags
 useHead({
-  title: `À propos - Hugo Schroder - Développeur Full-Stack & UI Designer`,
+  title: `À propos | Hugo Schroder - Développeur Full-Stack Freelance`,
   meta: [
     {
       name: 'description',
-      content: 'Passionné par la création, l\'innovation et le design. Développeur full-stack & UI designer freelance avec 2 ans d\'expérience. Je transforme vos idées en solutions concrètes et bien pensées.'
+      content: 'Développeur full-stack freelance (Vue, Nuxt, Node, Symfony). J’allie expertise technique et vision produit pour créer des solutions web performantes, maintenables et orientées résultats.'
     },
     {
       property: 'og:title',
-      content: 'À propos - Hugo Schroder - Développeur Full-Stack & UI Designer'
+      content: 'À propos | Hugo Schroder - Développeur Full-Stack Freelance'
     },
     {
       property: 'og:description',
-      content: 'Passionné par la création, l\'innovation et le design. Développeur full-stack & UI designer freelance avec 2 ans d\'expérience. Je transforme vos idées en solutions concrètes et bien pensées.'
+      content: 'Développeur full-stack freelance (Vue, Nuxt, Node, Symfony). Expertise technique, vision produit et accompagnement orienté résultats.'
     },
     {
       property: 'og:type',
       content: 'website'
-    }
+    },
+    { property: 'og:url', content: 'https://hugoschroder.dev/about' },
+    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:title', content: 'À propos | Hugo Schroder - Développeur Full-Stack Freelance' },
+    { name: 'twitter:description', content: 'Développeur full-stack freelance (Vue, Nuxt, Node, Symfony). Expertise technique et accompagnement orienté résultats.' }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://hugoschroder.dev/about' }
   ]
 })
 </script>

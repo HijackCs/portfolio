@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-white">
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+    <nav data-nosnippet class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
       <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
@@ -132,7 +132,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white">
+    <footer data-nosnippet class="bg-gray-900 text-white">
       <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Logo & Description -->
@@ -144,7 +144,7 @@
               <span class="font-semibold text-white">Hugo Schroder</span>
             </div>
             <p class="text-gray-400 text-sm">
-              Développeur web full-stack passionné par les technologies modernes.
+              Développeur web freelance passionné par les technologies modernes.
             </p>
           </div>
 

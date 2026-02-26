@@ -29,14 +29,9 @@ export default defineNuxtConfig({
         { property: 'og:description', content: 'Portfolio de Hugo Schroder, développeur web full-stack travaillant avec Nuxt.js (Vue.js) et TypeScript. J\'aide à créer des applications rapides, SEO-friendly et maintenables.' },
         { property: 'og:url', content: 'https://hugoschroder.dev' },
         { property: 'og:site_name', content: 'Hugo Schroder' },
-        { property: 'og:image', content: 'https://hugoschroder.dev/og-image.png' },
-        { property: 'og:image:width', content: '1200' },
-        { property: 'og:image:height', content: '630' },
-        { property: 'og:image:alt', content: 'Hugo Schroder - Développeur Nuxt.js & Vue.js' },
-        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:title', content: 'Hugo Schroder - Développeur Nuxt.js & Vue.js' },
-        { name: 'twitter:description', content: 'Portfolio de Hugo Schroder, développeur web full-stack travaillant avec Nuxt.js (Vue.js) et TypeScript. J\'aide à créer des applications rapides, SEO-friendly et maintenables.' },
-        { name: 'twitter:image', content: 'https://hugoschroder.dev/og-image.png' }
+        { name: 'twitter:description', content: 'Portfolio de Hugo Schroder, développeur web full-stack travaillant avec Nuxt.js (Vue.js) et TypeScript. J\'aide à créer des applications rapides, SEO-friendly et maintenables.' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -44,7 +39,6 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon-96x96.png' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
         { rel: 'manifest', href: '/site.webmanifest' },
-        { rel: 'canonical', href: 'https://hugoschroder.dev' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap' }

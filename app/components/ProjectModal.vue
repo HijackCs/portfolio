@@ -132,6 +132,36 @@
                 <div class="text-gray-300 leading-relaxed whitespace-pre-line">{{ project.detailedDescription }}</div>
               </div>
 
+              <!-- Context / Objective / Solution -->
+              <div v-if="project.context || project.objective || project.solution" class="space-y-3">
+                <h3 class="title-card text-white">Contexte • Objectif • Solution</h3>
+                <div class="space-y-4 text-gray-300">
+                  <p v-if="project.context">
+                    <span class="text-white font-semibold">Contexte :</span> {{ project.context }}
+                  </p>
+                  <p v-if="project.objective">
+                    <span class="text-white font-semibold">Objectif :</span> {{ project.objective }}
+                  </p>
+                  <p v-if="project.solution">
+                    <span class="text-white font-semibold">Solution :</span> {{ project.solution }}
+                  </p>
+                </div>
+              </div>
+
+              <!-- Keywords -->
+              <div v-if="project.keywords?.length" class="space-y-3">
+                <h3 class="title-card text-white">Mots-clés métier</h3>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    v-for="keyword in project.keywords"
+                    :key="keyword"
+                    class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-lg text-sm border border-purple-400/30"
+                  >
+                    {{ keyword }}
+                  </span>
+                </div>
+              </div>
+
               <!-- Features -->
               <div v-if="project.features?.length" class="space-y-3">
                 <h3 class="title-card text-white">Fonctionnalités principales</h3>
@@ -156,6 +186,12 @@
                     {{ challenge }}
                   </li>
                 </ul>
+              </div>
+
+              <!-- Qualitative Results -->
+              <div v-if="project.qualitativeResults" class="space-y-3">
+                <h3 class="title-card text-white">Résultats (qualitatifs)</h3>
+                <p class="text-gray-300 leading-relaxed">{{ project.qualitativeResults }}</p>
               </div>
 
               <!-- Results -->

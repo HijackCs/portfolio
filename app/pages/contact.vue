@@ -1,25 +1,8 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
-      <!-- Animated Background -->
-      <div class="absolute inset-0">
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-purple-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob"></div>
-        <div class="absolute bottom-1/3 right-1/4 w-96 h-96 bg-gradient-to-r from-cyan-400/20 to-blue-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-2000"></div>
-        <div class="absolute top-1/2 left-1/2 w-96 h-96 bg-gradient-to-r from-purple-400/20 to-pink-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-4000"></div>
-        <div class="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]"></div>
-      </div>
-      
-      <!-- 3D Floating Elements -->
-      <div class="absolute top-20 left-20 transform-gpu">
-        <div class="w-24 h-24 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-3xl shadow-2xl animate-float transform rotate-45 hover:rotate-90 transition-transform duration-700"></div>
-      </div>
-      <div class="absolute bottom-32 right-20 transform-gpu">
-        <div class="w-20 h-20 bg-gradient-to-br from-purple-400 to-pink-600 rounded-2xl shadow-2xl animate-float-reverse transform -rotate-12 hover:rotate-45 transition-transform duration-700" style="animation-delay: 1.5s;"></div>
-      </div>
-
-      <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-        <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in">
+    <AnimatedHero min-height="min-h-screen" floating="large">
+      <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in">
           <div class="text-center space-y-6">
             <h1 class="title-hero text-white">
               Vous avez une idée de
@@ -32,9 +15,8 @@
               <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent font-semibold">produit concret, performant et bien conçu</span>
             </p>
           </div>
-        </div>
       </div>
-    </section>
+    </AnimatedHero>
 
     <!-- Contact Section -->
     <section class="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
@@ -156,29 +138,11 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-24 bg-gray-900">
-      <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div class="text-center space-y-6 mb-16">
-          <h2 class="title-section text-white">
-            Questions <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">fréquentes</span>
-          </h2>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div 
-            v-for="faq in faqs" 
-            :key="faq.question"
-            class="group backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 hover:bg-white/20 hover:border-cyan-400/50 transition-all duration-500"
-          >
-            <h3 class="title-card text-white mb-3 group-hover:text-cyan-300 transition-colors">
-              {{ faq.question }}
-            </h3>
-            <p class="text-gray-300 leading-relaxed">
-              {{ faq.answer }}
-            </p>
-          </div>
-        </div>
-      </div>
+    <section class="bg-gray-900">
+      <FaqAccordion
+        :items="faqs"
+        title="Questions <span class='bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent'>fréquentes</span>"
+      />
     </section>
   </div>
 </template>
@@ -196,7 +160,17 @@ useHead({
     {
       name: 'description',
       content: contactMeta.description
-    }
+    },
+    { property: 'og:title', content: contactMeta.title },
+    { property: 'og:description', content: contactMeta.description },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://hugoschroder.dev/contact' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: contactMeta.title },
+    { name: 'twitter:description', content: contactMeta.description },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://hugoschroder.dev/contact' }
   ]
 })
 </script>

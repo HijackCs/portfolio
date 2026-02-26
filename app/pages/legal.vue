@@ -1,16 +1,8 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 overflow-hidden">
-      <!-- Animated Background -->
-      <div class="absolute inset-0">
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-gray-400/20 to-slate-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob"></div>
-        <div class="absolute bottom-1/3 right-1/4 w-96 h-96 bg-gradient-to-r from-slate-400/20 to-gray-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-2000"></div>
-        <div class="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]"></div>
-      </div>
-
-      <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-        <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in">
+    <AnimatedHero min-height="min-h-[50vh]" variant="gray" floating="none">
+      <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in">
           <div class="text-center space-y-6">
             <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-gray-500/20 to-slate-500/20 backdrop-blur-sm border border-gray-300/30 rounded-full">
               <span class="text-gray-300 text-lg font-medium">⚖️ Mentions Légales</span>
@@ -22,9 +14,8 @@
               </span>
             </h1>
           </div>
-        </div>
       </div>
-    </section>
+    </AnimatedHero>
 
     <!-- Legal Content -->
     <section class="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
@@ -227,27 +218,3 @@
   </div>
 </template>
 
-<script setup>
-// SEO Meta tags
-useHead({
-  title: 'Mentions Légales - Hugo Schroder',
-  meta: [
-    {
-      name: 'description',
-      content: 'Mentions légales du site Hugo Schroder. Informations sur l\'éditeur, l\'hébergement, la protection des données personnelles (RGPD) et les conditions d\'utilisation.'
-    },
-    {
-      property: 'og:title',
-      content: 'Mentions Légales - Hugo Schroder'
-    },
-    {
-      property: 'og:description',
-      content: 'Mentions légales du site Hugo Schroder. Informations légales et protection des données.'
-    },
-    {
-      name: 'robots',
-      content: 'noindex, follow'
-    }
-  ]
-})
-</script>

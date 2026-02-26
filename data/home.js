@@ -2,62 +2,62 @@
 
 export const services = [
   {
-    title: 'Développement Full-Stack',
-    description: 'Applications web ou mobiles complètes avec NestJS backend et Vue.js/Nuxt.js frontend.',
+    title: 'Site vitrine qui inspire confiance',
+    description: 'Un site clair, rapide et professionnel pour présenter votre activité et générer des demandes qualifiées.',
     icon: '🚀',
     features: [
-      'Applications Nuxt.js/Vue.js',
-      'Sites web ou mobiles responsive',
-      'APIs REST sécurisées',
-      'Interfaces utilisateur modernes'
+      'Design adapté à votre image',
+      'Parcours mobile optimisé',
+      'Pages services orientées conversion',
+      'Mise en ligne rapide et propre'
     ]
   },
   {
-    title: 'Développement Backend',
-    description: 'Solutions serveur robustes avec NestJS et gestion de bases de données.',
+    title: 'SEO local pour être trouvé',
+    description: 'Structure et contenus pensés pour améliorer votre visibilité sur Google, surtout en local.',
     icon: '⚙️',
     features: [
-      'Applications NestJS',
-      'APIs REST performantes',
-      'Bases de données PostgreSQL',
-      'Architecture MVC'
+      'Pages optimisées par intention',
+      'Balises et maillage interne',
+      'Optimisation technique de base',
+      'Ciblage Local'
     ]
   },
   {
-    title: 'Maintenance & Support',
-    description: 'Amélioration et maintenance d\'applications web existantes.',
+    title: 'Évolutions et accompagnement',
+    description: 'Refonte, amélioration d’un site existant ou ajout de fonctionnalités utiles à votre activité.',
     icon: '🔧',
     features: [
-      'Refactoring de code',
-      'Optimisation des performances',
-      'Correction de bugs',
-      'Mise à jour technologique'
+      'Audit et plan d’amélioration',
+      'Corrections de points bloquants',
+      'Ajout de fonctionnalités métier',
+      'Suivi après mise en ligne'
     ]
   }
 ]
 
 export const featuredProjects = [
   {
-    title: 'Application interne alternance',
-    description: 'Optimisation de la gestion des temps : réduction de 30% du temps de saisie grâce à une application web complète développée avec Symfony et Vue.js.',
+    title: 'Application de gestion interne',
+    description: 'Digitalisation d’un processus interne avec réduction du temps de saisie et meilleure fiabilité des données.',
     emoji: '🏢',
-    technologies: ['Quasar', 'PostgreSQL', 'Symfony']
+    technologies: ['Application métier', 'Back-office', 'Automatisation']
   },
   {
-    title: 'Gfaim',
-    description: 'Solution anti-gaspillage alimentaire : application mobile avec gestion intelligente du frigo et suggestions de recettes personnalisées.',
-    emoji: '🎓',
-    technologies: ['Java', 'Quarkus', 'Android']
+    title: 'Solution mobile anti-gaspillage',
+    description: 'Conception d’une application orientée usage avec logique personnalisée et expérience mobile optimisée.',
+    emoji: '📱',
+    technologies: ['Application mobile', 'UX', 'API']
   },
   {
-    title: 'Portfolio personnel',
-    description: 'Vitrine professionnelle moderne avec Nuxt.js et design 3D avec une UX optimisée.',
-    emoji: '💼',
-    technologies: ['Nuxt.js', 'Vue.js', 'Tailwind CSS', 'Markdown']
+    title: 'Site vitrine optimisé SEO local',
+    description: 'Création d’un site rapide, lisible et orienté conversion, avec structure de contenu pensée pour Google.',
+    emoji: '🌍',
+    technologies: ['Site vitrine', 'SEO local', 'Performance']
   }
 ]
 
 export const homeMeta = {
-  title: 'Hugo Schroder - Développeur Full-Stack & UI Designer',
-  description: 'Je transforme vos idées en solutions web performantes et bien pensées. Développeur freelance Vue.js/Nuxt.js & UI designer passionné par la création, l\'innovation et le design.'
+  title: 'Freelance Web pour artisans, PME et indépendants | Site vitrine, SEO local et accompagnement',
+  description: 'J’aide artisans, PME et indépendants à obtenir un site web clair, visible et utile pour générer plus de demandes clients.'
 }

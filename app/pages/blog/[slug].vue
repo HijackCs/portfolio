@@ -254,10 +254,10 @@
                 </svg>
               </NuxtLink>
               <NuxtLink 
-                to="/projects"
+                to="/simulateur-prix"
                 class="inline-flex items-center justify-center gap-2 bg-white/10 border border-white/20 text-white px-8 py-4 rounded-xl font-medium hover:bg-white/20 transition-all duration-300"
               >
-                Voir mes projets
+                Estimer mon budget
               </NuxtLink>
             </div>
           </div>
@@ -297,11 +297,30 @@ const { data: relatedArticles } = await useAsyncData('related-articles', async (
 // Always use production URL to avoid hydration mismatches and ensure valid sharing links
 const currentUrl = computed(() => `https://hugoschroder.dev${route.fullPath}`)
 
-// OG Image URL (must be absolute)
-const ogImageUrl = computed(() => {
-  const imagePath = article.value?.image || '/og-image.png'
-  return `https://hugoschroder.dev${imagePath}`
-})
+const breadcrumbList = computed(() => ({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Accueil',
+      item: 'https://hugoschroder.dev'
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Blog',
+      item: 'https://hugoschroder.dev/blog'
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: article.value?.title || 'Article',
+      item: currentUrl.value
+    }
+  ]
+}))
 
 // SEO & JSON-LD
 useHead({
@@ -315,8 +334,6 @@ useHead({
     { property: 'og:description', content: computed(() => article.value?.description || '') },
     { property: 'og:type', content: 'article' },
     { property: 'og:url', content: currentUrl },
-    { property: 'og:image', content: ogImageUrl },
-    { property: 'og:image:alt', content: computed(() => article.value?.title || '') },
     
     // Article specific
     { property: 'article:published_time', content: computed(() => article.value?.published || '') },
@@ -325,10 +342,9 @@ useHead({
     { property: 'article:tag', content: computed(() => article.value?.tags?.join(', ') || '') },
     
     // Twitter
-    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:card', content: 'summary' },
     { name: 'twitter:title', content: computed(() => article.value?.title || '') },
-    { name: 'twitter:description', content: computed(() => article.value?.description || '') },
-    { name: 'twitter:image', content: ogImageUrl }
+    { name: 'twitter:description', content: computed(() => article.value?.description || '') }
   ],
   link: [
     { rel: 'canonical', href: currentUrl }
@@ -341,7 +357,6 @@ useHead({
         '@type': 'BlogPosting',
         headline: article.value?.title,
         description: article.value?.description,
-        image: ogImageUrl.value,
         datePublished: article.value?.published,
         author: {
           '@type': 'Person',
@@ -361,6 +376,10 @@ useHead({
           '@id': currentUrl.value
         }
       }))
+    },
+    {
+      type: 'application/ld+json',
+      children: computed(() => JSON.stringify(breadcrumbList.value))
     }
   ]
 })

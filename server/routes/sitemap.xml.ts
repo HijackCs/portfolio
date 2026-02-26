@@ -6,10 +6,17 @@ export default defineEventHandler(async (event) => {
   // Pages statiques
   const staticPages = [
     { loc: '/', priority: 1.0, changefreq: 'weekly' },
+    { loc: '/developpeur-web-freelance-lens', priority: 0.95, changefreq: 'monthly' },
     { loc: '/blog', priority: 0.9, changefreq: 'weekly' },
     { loc: '/projects', priority: 0.9, changefreq: 'monthly' },
+    { loc: '/about', priority: 0.7, changefreq: 'yearly' },
     { loc: '/contact', priority: 0.7, changefreq: 'monthly' },
     { loc: '/simulateur-prix', priority: 0.95, changefreq: 'monthly' },
+    { loc: '/prix-site-internet', priority: 0.9, changefreq: 'monthly' },
+    { loc: '/prix-site-vitrine', priority: 0.9, changefreq: 'monthly' },
+    { loc: '/prix-site-ecommerce', priority: 0.9, changefreq: 'monthly' },
+    { loc: '/prix-application-web', priority: 0.9, changefreq: 'monthly' },
+    { loc: '/combien-coute-un-site-internet', priority: 0.9, changefreq: 'monthly' },
   ]
 
   // Générer les URLs dynamiques pour le blog

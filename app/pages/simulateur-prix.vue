@@ -1,25 +1,8 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
-      <!-- Animated Background -->
-      <div class="absolute inset-0">
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-purple-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob"></div>
-        <div class="absolute bottom-1/3 right-1/4 w-96 h-96 bg-gradient-to-r from-cyan-400/20 to-blue-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-2000"></div>
-        <div class="absolute top-1/2 left-1/2 w-96 h-96 bg-gradient-to-r from-purple-400/20 to-pink-600/20 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-4000"></div>
-        <div class="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]"></div>
-      </div>
-      
-      <!-- 3D Floating Elements -->
-      <div class="absolute top-20 left-20 transform-gpu">
-        <div class="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-lg shadow-2xl animate-float transform rotate-12 hover:rotate-45 transition-transform duration-700"></div>
-      </div>
-      <div class="absolute bottom-32 right-20 transform-gpu">
-        <div class="w-12 h-12 bg-gradient-to-br from-pink-400 to-purple-600 rounded-full shadow-2xl animate-float-reverse transform -rotate-12 hover:rotate-45 transition-transform duration-700" style="animation-delay: 1s;"></div>
-      </div>
-
-      <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-        <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in">
+    <AnimatedHero min-height="min-h-[60vh]">
+      <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in">
           <div class="text-center space-y-6">
             <h1 class="title-hero text-white">
               Estimez le prix de votre
@@ -54,9 +37,8 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
-    </section>
+    </AnimatedHero>
 
     <!-- Simulator Section -->
     <section class="py-16 md:py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
@@ -66,6 +48,31 @@
       </div>
 
       <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+        <!-- Intro -->
+        <div class="text-center space-y-6 mb-12">
+          <p class="text-paragraph text-gray-300 leading-relaxed">
+            Vous cherchez à estimer le prix d’un site vitrine, d’un e-commerce ou d’une application web ?
+            Ce simulateur vous aide à obtenir une fourchette réaliste selon vos objectifs, vos fonctionnalités et votre
+            niveau d’accompagnement. Je travaille avec des entreprises locales et des indépendants qui souhaitent un site
+            rapide, clair et optimisé pour le SEO local (Lens, Lille, Hauts-de-France). En quelques minutes, vous obtenez
+            un budget indicatif pour cadrer votre projet et préparer un échange concret.
+          </p>
+          <p class="text-paragraph text-gray-300 leading-relaxed max-w-3xl mx-auto">
+            Le prix d’un site dépend fortement du type de projet. Découvrez par exemple le
+            <NuxtLink to="/prix-site-vitrine" class="text-cyan-300 hover:text-cyan-200 underline decoration-cyan-500/40">prix d’un site vitrine</NuxtLink>,
+            le
+            <NuxtLink to="/prix-site-ecommerce" class="text-cyan-300 hover:text-cyan-200 underline decoration-cyan-500/40">budget d’un site e-commerce</NuxtLink>,
+            ou encore le
+            <NuxtLink to="/prix-application-web" class="text-cyan-300 hover:text-cyan-200 underline decoration-cyan-500/40">coût d’une application web</NuxtLink>.
+          </p>
+          <NuxtLink
+            to="/contact"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-2xl shadow-xl hover:bg-white/20 hover:border-cyan-400/50 hover:shadow-cyan-500/25 transition-all duration-300"
+          >
+            Demander un audit gratuit
+          </NuxtLink>
+        </div>
+
         <!-- Simulator Card -->
         <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl">
           <div class="space-y-8">
@@ -105,30 +112,69 @@
       </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- Pricing Ranges Section -->
     <section class="py-16 md:py-24 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 relative overflow-hidden">
       <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div class="text-center space-y-4 mb-12">
           <h2 class="title-section text-white">
-            Questions <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">fréquentes</span>
+            Fourchettes de <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">prix indicatives</span>
           </h2>
-          <p class="text-paragraph text-gray-300 max-w-2xl mx-auto">
-            Tout ce que vous devez savoir sur le coût de création d'un site web
+          <p class="text-paragraph text-gray-300 max-w-3xl mx-auto">
+            Ces montants sont indicatifs et varient selon la complexité, le volume de contenu et les délais. L’objectif :
+            vous donner un ordre de grandeur clair avant un devis détaillé.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <div 
-            v-for="faq in faqs" 
-            :key="faq.question"
-            class="group backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 hover:bg-white/20 hover:border-cyan-400/50 transition-all duration-500"
-          >
-            <h3 class="title-card text-white mb-3 group-hover:text-cyan-300 transition-colors">
-              {{ faq.question }}
-            </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-cyan-400/30 transition-all duration-300">
+            <h3 class="title-card text-white mb-2">Site vitrine</h3>
+            <p class="text-cyan-300 font-semibold mb-3">≈ 900€ – 2 500€</p>
             <p class="text-gray-300 text-sm leading-relaxed">
-              {{ faq.answer }}
+              Idéal pour présenter votre activité, vos services et générer des contacts. Comprend un design personnalisé,
+              un contenu clair et une base SEO locale.
             </p>
+          </div>
+          <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-cyan-400/30 transition-all duration-300">
+            <h3 class="title-card text-white mb-2">E-commerce</h3>
+            <p class="text-cyan-300 font-semibold mb-3">≈ 3 000€ – 8 000€</p>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              Catalogue, paiement en ligne, gestion des commandes et optimisation conversion. Adapté aux boutiques locales
+              et marques qui veulent vendre efficacement.
+            </p>
+          </div>
+          <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-cyan-400/30 transition-all duration-300">
+            <h3 class="title-card text-white mb-2">Application web</h3>
+            <p class="text-cyan-300 font-semibold mb-3">≈ 6 000€ – 15 000€+</p>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              Plateforme sur-mesure avec logique métier, espace membre ou back-office. Conçue pour automatiser
+              et faire gagner du temps à votre équipe.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Reading -->
+    <section class="py-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 md:p-10">
+          <div class="text-center space-y-4 mb-8">
+            <h2 class="title-section text-white">
+              À lire aussi pour <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">affiner votre budget</span>
+            </h2>
+            <p class="text-paragraph text-gray-300 max-w-3xl mx-auto">
+              Ces pages satellites détaillent les cas concrets et les facteurs de prix selon votre type de projet.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <NuxtLink
+              v-for="link in pricingSatelliteLinks"
+              :key="link.to"
+              :to="link.to"
+              class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-gray-200 hover:text-cyan-200 hover:border-cyan-400/40 hover:bg-white/10 transition-colors"
+            >
+              {{ link.label }}
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -160,6 +206,15 @@
       </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 relative overflow-hidden">
+      <FaqAccordion
+        :items="faqs"
+        title="Questions <span class='bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent'>fréquentes</span>"
+        description="Réponses concrètes sur les coûts, les délais et la manière dont je construis des sites performants."
+      />
+    </section>
+
     <!-- CTA Section -->
     <section class="py-16 md:py-24 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 relative overflow-hidden">
       <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center relative z-10">
@@ -177,8 +232,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </NuxtLink>
-            <NuxtLink to="/projects" class="group relative inline-flex items-center px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-2xl shadow-xl hover:bg-white/20 hover:border-cyan-400/50 hover:shadow-cyan-500/25 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300">
-              <span class="text-lg">Voir mes réalisations</span>
+            <NuxtLink to="/developpeur-web-freelance-lens" class="group relative inline-flex items-center px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-2xl shadow-xl hover:bg-white/20 hover:border-cyan-400/50 hover:shadow-cyan-500/25 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300">
+              <span class="text-lg">Développeur web à Lens</span>
               <svg class="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -191,9 +246,64 @@
 </template>
 
 <script setup>
+const faqs = ref([
+  {
+    question: 'Combien coûte un site vitrine ?',
+    answer: 'Un site vitrine se situe souvent entre 900€ et 2 500€ selon le nombre de pages, le design et l\'optimisation SEO locale attendue.'
+  },
+  {
+    question: 'Quel budget prévoir pour un e-commerce ?',
+    answer: 'Un e-commerce démarre en général autour de 3 000€ et peut monter selon le catalogue, les moyens de paiement, la logistique et les fonctionnalités marketing.'
+  },
+  {
+    question: 'Quels facteurs font varier le prix ?',
+    answer: 'Le type de site, le nombre de pages, les fonctionnalités spécifiques (paiement, espace membre, automatisations), le niveau de design et l\'optimisation SEO sont déterminants.'
+  },
+  {
+    question: 'Le simulateur est-il vraiment gratuit ?',
+    answer: 'Oui, il est 100% gratuit et sans engagement. Il vous permet d\'obtenir un budget indicatif pour cadrer votre projet.'
+  },
+  {
+    question: 'Où trouver le détail par type de projet ?',
+    answerHtml: 'Consultez les guides dédiés : <a href=\"/prix-site-vitrine\" class=\"text-cyan-300 underline decoration-cyan-500/40\">prix site vitrine</a>, <a href=\"/prix-site-ecommerce\" class=\"text-cyan-300 underline decoration-cyan-500/40\">prix site e-commerce</a> et <a href=\"/prix-application-web\" class=\"text-cyan-300 underline decoration-cyan-500/40\">prix application web</a>.' 
+  },
+  {
+    question: 'Qu\'est-ce qui est inclus dans une estimation ?',
+    answer: 'La fourchette inclut la conception, le développement, l\'intégration de contenu, l\'optimisation SEO de base et la mise en ligne. Hébergement et maintenance sont généralement séparés.'
+  },
+  {
+    question: 'Un design sur-mesure coûte-t-il plus cher ?',
+    answer: 'Oui, un design personnalisé demande plus de conception et de validation, mais améliore la différenciation et la conversion.'
+  },
+  {
+    question: 'Combien de temps faut-il pour créer un site ?',
+    answer: 'Un site vitrine simple peut être prêt en 2 à 4 semaines. Un e-commerce ou une app web nécessitent souvent 6 à 12 semaines selon le périmètre.'
+  },
+  {
+    question: 'Proposez-vous un accompagnement SEO local ?',
+    answer: 'Oui, je travaille l\'optimisation locale (Lens, Lille, Hauts-de-France) via la structure des pages, les contenus et les bonnes balises.'
+  },
+  {
+    question: 'Puis-je obtenir un devis personnalisé ?',
+    answer: 'Oui. Une fois l\'estimation obtenue, on échange sur votre besoin pour établir un devis clair et adapté.'
+  },
+  {
+    question: 'Puis-je faire évoluer mon site plus tard ?',
+    answer: 'Bien sûr. Je conçois des sites évolutifs pour ajouter des pages, des fonctionnalités ou des optimisations au fil du temps.'
+  }
+])
+
+const pricingSatelliteLinks = [
+  { to: '/prix-site-internet', label: 'Prix d’un site internet : guide complet' },
+  { to: '/prix-site-vitrine', label: 'Prix d’un site vitrine' },
+  { to: '/prix-site-ecommerce', label: 'Prix d’un site e-commerce' },
+  { to: '/prix-application-web', label: 'Prix d’une application web' },
+  { to: '/combien-coute-un-site-internet', label: 'Combien coûte un site internet ?' }
+]
+
 // SEO Meta - Optimisé pour les recherches de prix de site web
 useHead({
-  title: 'Simulateur de Prix Site Web 2024 | Estimation Gratuite en 60 Secondes',
+  title: 'Simulateur de Prix Site Web | Estimation Gratuite en 60 Secondes',
   meta: [
     { 
       name: 'description', 
@@ -211,26 +321,23 @@ useHead({
     { property: 'og:description', content: 'Obtenez une estimation précise du coût de votre site web en quelques clics. Gratuit, sans engagement, réponse immédiate.' },
     { property: 'og:url', content: 'https://hugoschroder.dev/simulateur-prix' },
     { property: 'og:site_name', content: 'Hugo Schroder - Développeur Web' },
-    { property: 'og:image', content: 'https://hugoschroder.dev/og-image-simulator.png' },
-    { property: 'og:image:width', content: '1200' },
-    { property: 'og:image:height', content: '630' },
-    { property: 'og:image:alt', content: 'Simulateur de prix pour site web - Estimation gratuite' },
-    
     // Twitter Card
-    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:card', content: 'summary' },
     { name: 'twitter:title', content: 'Simulateur de Prix Site Web | Estimation Gratuite' },
     { name: 'twitter:description', content: 'Estimez le coût de votre site web en 60 secondes. Gratuit et sans engagement.' },
-    { name: 'twitter:image', content: 'https://hugoschroder.dev/og-image-simulator.png' },
     
     // Additional SEO
-    { name: 'robots', content: 'index, follow' },
-    { name: 'googlebot', content: 'index, follow' },
+    { name: 'robots', content: 'index, follow, max-image-preview:none' },
+    { name: 'googlebot', content: 'index, follow, max-image-preview:none' },
     { name: 'language', content: 'fr-FR' },
     { name: 'geo.region', content: 'FR' },
-    { name: 'geo.placename', content: 'France' },
-    
-    // Schema.org structured data
-    { 
+    { name: 'geo.placename', content: 'France' }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://hugoschroder.dev/simulateur-prix' }
+  ],
+  script: [
+    {
       type: 'application/ld+json',
       children: JSON.stringify({
         '@context': 'https://schema.org',
@@ -260,34 +367,30 @@ useHead({
     },
     {
       type: 'application/ld+json',
-      children: JSON.stringify({
+      children: computed(() => JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
-        'mainEntity': [
-          {
-            '@type': 'Question',
-            'name': 'Quels sont les facteurs qui influencent le prix d\'un site web ?',
-            'acceptedAnswer': {
-              '@type': 'Answer',
-              'text': 'Les principaux facteurs sont : le type de site (vitrine, e-commerce, application), le nombre de pages, les fonctionnalités spécifiques, le design sur-mesure, l\'optimisation SEO, la maintenance, et les technologies utilisées.'
-            }
-          },
-          {
-            '@type': 'Question',
-            'name': 'Le simulateur de prix est-il vraiment gratuit ?',
-            'acceptedAnswer': {
-              '@type': 'Answer',
-              'text': 'Oui, le simulateur est 100% gratuit et sans engagement. Vous obtenez une estimation instantanée sans avoir à fournir vos coordonnées bancaires.'
-            }
+        'mainEntity': faqs.value.map((faq) => ({
+          '@type': 'Question',
+          'name': faq.question,
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': faq.answer
           }
+        }))
+      }))
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://hugoschroder.dev' },
+          { '@type': 'ListItem', position: 2, name: 'Simulateur de prix', item: 'https://hugoschroder.dev/simulateur-prix' }
         ]
       })
-    }
-  ],
-  link: [
-    { rel: 'canonical', href: 'https://hugoschroder.dev/simulateur-prix' }
-  ],
-  script: [
+    },
     {
       src: 'https://tally.so/widgets/embed.js',
       async: true,
@@ -310,25 +413,6 @@ onMounted(() => {
     setTimeout(() => clearInterval(checkTally), 5000)
   }
 })
-
-const faqs = ref([
-  {
-    question: 'Quels sont les facteurs qui influencent le prix ?',
-    answer: 'Les principaux facteurs sont : le type de site (vitrine, e-commerce, application), le nombre de pages, les fonctionnalités spécifiques (paiement en ligne, espace membre, etc.), le design sur-mesure, l\'optimisation SEO, et les technologies utilisées.'
-  },
-  {
-    question: 'Le simulateur est-il vraiment gratuit ?',
-    answer: 'Oui, le simulateur est 100% gratuit et sans engagement. Vous obtenez une estimation instantanée de votre projet sans avoir à fournir vos coordonnées bancaires. C\'est un outil pour vous aider à budgétiser votre projet.'
-  },
-  {
-    question: 'Qu\'est-ce qui est inclus dans le prix ?',
-    answer: 'Le prix inclut : la conception et le design, le développement, l\'intégration du contenu, l\'optimisation SEO de base, les tests, la mise en ligne, et la formation. La maintenance et l\'hébergement sont facturés séparément.'
-  },
-  {
-    question: 'Puis-je obtenir un devis personnalisé ?',
-    answer: 'Absolument ! Après avoir utilisé le simulateur, vous pouvez me contacter directement pour discuter de votre projet en détail et obtenir un devis personnalisé et précis adapté à vos besoins spécifiques.'
-  }
-])
 
 // Pricing Factors
 const pricingFactors = ref([
