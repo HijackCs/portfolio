@@ -51,6 +51,58 @@ Le template sert de base pour mon offre standard et est facilement personnalisab
   },
   {
     id: 2,
+    title: "Boutique Club Running - JCBB",
+    description: "Boutique catalogue pour un club de course à pied, permettant de sélectionner les équipements, le modèle, la taille et la quantité, puis d'envoyer une commande sans paiement en ligne.",
+    impact: "Les demandes d'équipements sont centralisées dans un parcours unique, avec un récapitulatif envoyé au membre et au club.",
+    context: "Le club avait besoin d'un outil simple pour présenter ses vêtements officiels et collecter les commandes sans mettre en place de paiement en ligne.",
+    objective: "Fluidifier la prise de commande et éviter les échanges manuels dispersés par message.",
+    solution: "Une boutique responsive avec catalogue produit, variantes, panier et envoi d'emails de confirmation.",
+    qualitativeResults: "Parcours de commande plus clair pour les adhérents et suivi des demandes simplifié pour l'organisation du club.",
+    keywords: ["boutique catalogue", "club sportif", "commande sans paiement", "email", "Nuxt.js"],
+    image: "/images/JCBB-home.png",
+    images: [
+      "/images/JCBB-home.png",
+      "/images/JCBB-product.jpeg",
+      "/images/JCBB-cart.jpeg"
+    ],
+    technologies: ["Nuxt.js", "Tailwind CSS", "Pinia", "Vercel"],
+    category: "Web",
+    sector: "Freelance",
+    freelance: true,
+    status: "Terminé",
+    year: 2026,
+    client: "Jogging Club Billy-Berclau (JCBB)",
+    duration: "2 jours",
+    features: [
+      "Catalogue d'équipements avec visuels et tarifs",
+      "Sélection du modèle, de la taille et de la quantité",
+      "Panier avant validation de la commande",
+      "Envoi d'un email récapitulatif au client",
+      "Envoi d'un email de notification au gestionnaire du club"
+    ],
+    detailedDescription: `Cette boutique a été réalisée pour le Jogging Club Billy-Berclau afin de simplifier la gestion des commandes d'équipements du club. Le site présente les vêtements disponibles, leurs prix et leurs variantes directement dans une interface claire et responsive.
+
+L'utilisateur peut parcourir le catalogue, consulter une fiche produit, choisir son modèle, sa taille et la quantité souhaitée, puis ajouter ses articles au panier. Le parcours a été pensé comme une boutique en ligne, mais sans paiement intégré : la validation déclenche l'envoi d'un récapitulatif par email au client ainsi qu'une notification côté club pour traiter la demande.`,
+    challenges: [
+      "Concevoir un parcours de commande simple sans tunnel de paiement classique",
+      "Gérer les variantes produit (modèle, taille, quantité)",
+      "Assurer une expérience fluide sur mobile pour les adhérents",
+      "Fiabiliser le double envoi d'emails de récapitulatif"
+    ],
+    results: [
+      "Présentation centralisée des vêtements du club",
+      "Commandes structurées et plus simples à traiter",
+      "Moins d'allers-retours manuels pour recueillir les besoins",
+      "Expérience responsive adaptée aux membres"
+    ],
+    links: {
+      demo: "https://jcbb-club-shop.vercel.app/",
+      github: "https://github.com/HijackCs/JCBB_club_shop"
+
+    }
+  },
+  {
+    id: 3,
     title: "Application Web - Gestion interne",
     description: "Application web de gestion développée dans le cadre de mon alternance avec Symfony et Vue.js pour optimiser les processus internes + divers projets comptable.",
     impact: "Application interne qui a réduit de 30% le temps de saisie des heures par les agents et automatisé la génération des rapports mensuels, améliorant significativement l'efficacité opérationnelle.",
@@ -98,7 +150,7 @@ Le backend Symfony assure la robustesse et la sécurité des données, avec une 
     links: {}
   },
   {
-    id: 3,
+    id: 4,
     title: "GFaim",
     description: "Application mobile de gestion des repas et du frigo avec authentification et API REST sécurisée.",
     impact: "Réduction du gaspillage alimentaire grâce à la gestion des stocks et aux suggestions personnalisées.",
@@ -138,7 +190,7 @@ Le backend Symfony assure la robustesse et la sécurité des données, avec une 
     }
   },
   {
-    id: 4,
+    id: 5,
     title: "Portfolio Personnel - Site Vitrine",
     description: "Site portfolio moderne avec Nuxt.js, design 3D, système de blog intégré et approche data-driven pour présenter mes compétences.",
     context: "Besoin d'une vitrine claire pour présenter mes services et mes projets.",
@@ -187,7 +239,7 @@ L'optimisation SEO et les performances garantissent une excellente visibilité e
     }
   },
   {
-    id: 5,
+    id: 6,
     title: "AlternantApp",
     description: "Application pour enregistrer facilement les heures réalisées chaque jour en alternance, avec historique détaillé et gestion automatique du bonus/malus.",
     impact: "Gain de ~15 min/jour sur la saisie et suppression des erreurs de calcul grâce à l'automatisation.",
@@ -235,7 +287,7 @@ Les données sont stockées localement pour garantir la confidentialité et perm
     }
   },
   {
-    id: 6,
+    id: 7,
     title: "POC Quasar",
     description: "Proof of concept démontrant comment Quasar permet de créer des applications web et mobiles performantes à partir d’une base de code unique.",
     context: "Évaluer une approche multi-plateforme pour réduire le temps de développement.",
@@ -284,7 +336,7 @@ Il a été réalisé dans le cadre de mon master, le but était de mettre en ava
   
   
   {
-    id: 7,
+    id: 8,
     title: "Projet Domotique IoT – Raspberry & Zigbee",
     description: "Mise en place d’un système domotique personnel basé sur Raspberry Pi, Arduino et réseau Zigbee, supervisé via Home Assistant. Intégration de capteurs (température, luminosité, météo), automatisations (allumage, alertes, scénarios) et configuration du réseau local sécurisé.",
     impact: "Baisse d'environ 20% de la consommation énergétique grâce aux automatisations et à la supervision centralisée.",
