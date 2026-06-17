@@ -1,3 +1,112 @@
 @import "tailwindcss";
-@import "@nuxt/ui";
 
+/* ------------------------------------------------------------------ */
+/* Design tokens palette logo (bleu, violet, fond navy)     */
+/* ------------------------------------------------------------------ */
+@theme {
+  --color-*: initial;
+
+  --color-bg: #0d1117;
+  --color-surface: #161b27;
+  --color-surface-raised: #1c2333;
+  --color-line: #232b3d;
+
+  --color-primary: #3b82f6;
+  --color-secondary: #7c3aed;
+
+  --color-ink: #f0f4ff;
+  --color-muted: #8892a4;
+
+  --color-white: #ffffff;
+  --color-transparent: transparent;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --shadow-glow: 0 18px 50px -18px rgba(59, 130, 246, 0.35), 0 18px 50px -18px rgba(124, 58, 237, 0.25);
+}
+
+/* ------------------------------------------------------------------ */
+/* Base                                                                */
+/* ------------------------------------------------------------------ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-bg);
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-primary) 35%, transparent);
+    color: var(--color-ink);
+  }
+
+  /* Le cursor custom remplace le natif sur les devices pointer fin */
+  @media (pointer: fine) {
+    html.has-custom-cursor,
+    html.has-custom-cursor a,
+    html.has-custom-cursor button {
+      cursor: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Utilitaires signature                                               */
+/* ------------------------------------------------------------------ */
+@utility text-gradient {
+  background-image: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@utility bg-gradient-signature {
+  background-image: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+}
+
+/* Grille blueprint, dot grid */
+@utility bg-blueprint {
+  background-image: radial-gradient(circle, rgba(136, 146, 164, 0.2) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Masque radial pour estomper la grille vers les bords */
+@utility mask-fade-edges {
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 35%, black 30%, transparent 100%);
+}
+
+@layer components {
+  .badge {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: var(--color-muted);
+    border: 1px solid var(--color-line);
+    border-radius: 9999px;
+    padding: 0.2rem 0.65rem;
+    white-space: nowrap;
+  }
+}
