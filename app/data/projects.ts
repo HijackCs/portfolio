@@ -311,7 +311,7 @@ export const projects: Project[] = [
       'Calcul automatique du solde de bonus/malus',
       'Vue récapitulative du solde'
     ],
-    repo: '',
+    repo: 'https://github.com/HijackCs/AlternantApp',
     links: [],
     images: [{ src: 'projects/alternant-app/alternantApp.png', alt: 'alternant app' }]
   },
