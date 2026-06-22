@@ -68,10 +68,25 @@
 </template>
 
 <script setup lang="ts">
+const title = 'À propos - Hugo Schroder'
+const description = 'Parcours et stack de travail de Hugo Schroder, ingénieur logiciel - mobile, web, IoT et DevOps.'
+
 useSeoMeta({
-  title: 'À propos - Hugo Schroder',
-  description: 'Parcours et stack de travail de Hugo Schroder, ingénieur logiciel - mobile, web, IoT et DevOps.'
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description
 })
+
+useSchemaOrg([
+  defineWebPage({ '@type': ['WebPage', 'AboutPage'] }),
+  defineBreadcrumb({
+    itemListElement: [
+      { name: 'Accueil', item: '/' },
+      { name: 'À propos', item: '/about' }
+    ]
+  })
+])
 
 const root = ref<HTMLElement | null>(null)
 useScrollReveal(root)

@@ -25,8 +25,14 @@
         hugoschroder.dev
       </p>
 
-      <h1 class="font-display text-4xl font-bold leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
-        <span class="block overflow-hidden">
+      <h1
+        :aria-label="`${line1Text} ${line2Text}`"
+        class="font-display text-4xl font-bold leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl"
+      >
+        <span
+          aria-hidden="true"
+          class="block overflow-hidden"
+        >
           <span
             v-for="(char, i) in line1"
             :key="`l1-${i}`"
@@ -34,7 +40,10 @@
             class="inline-block whitespace-pre"
           >{{ char }}</span>
         </span>
-        <span class="block overflow-hidden">
+        <span
+          aria-hidden="true"
+          class="block overflow-hidden"
+        >
           <span
             v-for="(char, i) in line2"
             :key="`l2-${i}`"
@@ -96,8 +105,9 @@
 <script setup lang="ts">
 const root = ref<HTMLElement | null>(null)
 
-const line1 = 'Je construis des apps.'.split('')
-const line2Text =  'Du mobile au web.'
+const line1Text = 'Je construis des apps.'
+const line1 = line1Text.split('')
+const line2Text = 'Du mobile au web.'
 const line2 = line2Text.split('')
 // "production." en gradient
 const gradientStart = line2Text.indexOf('mobile')

@@ -15,7 +15,7 @@
           <span class="font-display text-4xl font-bold text-gradient">HS</span>
           <NuxtImg
             v-if="!imgError"
-            src="/hugo.jpg"
+            src="/hugo.webp"
             alt="Hugo Schroder"
             sizes="160px md:192px"
             class="absolute inset-0 size-full object-cover object-center"

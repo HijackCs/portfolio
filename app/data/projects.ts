@@ -1,7 +1,6 @@
 export type ProjectCategory = 'mobile' | 'web' | 'iot' | 'tools'
 export type ProjectStatus = 'done' | 'ongoing'
 
-
 export interface ProjectLink {
   label: string
   url: string
@@ -97,7 +96,7 @@ export const projects: Project[] = [
       { src: '/projects/lenspot/accueil.png', alt: 'Écran d\'accueil de Lenspot' },
       { src: '/projects/lenspot/carte.png', alt: 'Carte de Lenspot' },
       { src: '/projects/lenspot/detailSpot.png', alt: 'Détail d\'un spot' },
-      { src: '/projects/lenspot/listeSpots.png', alt: 'Liste des spot' },
+      { src: '/projects/lenspot/listeSpots.png', alt: 'Liste des spots photo enregistrés dans Lenspot' },
       { src: '/projects/lenspot/favoris.png', alt: 'Favoris' }
     ]
   },
@@ -147,7 +146,7 @@ export const projects: Project[] = [
     repo: 'https://github.com/hijackcs/gfaim-api',
     links: [],
     images: [
-      { src: '/projects/gfaim/gfaim.png', alt: 'page d\'accueil' }
+      { src: '/projects/gfaim/gfaim.png', alt: 'Page d\'accueil de l\'application mobile GFaim' }
     ]
   },
   {
@@ -239,7 +238,7 @@ export const projects: Project[] = [
     ],
     repo: '',
     links: [],
-    images: [{ src: 'projects/domotique-iot/Home-Assistant.png', alt: 'logo Home Assistant' }]
+    images: [{ src: 'projects/domotique-iot/Home-Assistant.png', alt: 'Tableau de bord Home Assistant du système domotique IoT' }]
   },
   {
     slug: 'poc-quasar',
@@ -278,7 +277,7 @@ export const projects: Project[] = [
     ],
     repo: 'https://github.com/HijackCs/poc-quasar',
     links: [],
-    images: [{ src: 'projects/poc-quasar/poc.png', alt: 'poc quasar' }]
+    images: [{ src: 'projects/poc-quasar/poc.png', alt: 'POC Quasar cross-platform sur mobile et desktop' }]
   },
   {
     slug: 'alternant-app',
@@ -313,7 +312,7 @@ export const projects: Project[] = [
     ],
     repo: 'https://github.com/HijackCs/AlternantApp',
     links: [],
-    images: [{ src: 'projects/alternant-app/alternantApp.png', alt: 'alternant app' }]
+    images: [{ src: 'projects/alternant-app/alternantApp.png', alt: 'Interface de l\'application AlternantApp' }]
   },
   {
     slug: 'boutique-jcbb',

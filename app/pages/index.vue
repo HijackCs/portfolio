@@ -8,8 +8,18 @@
 </template>
 
 <script setup lang="ts">
+const title = 'Hugo Schroder - Ingénieur logiciel'
+const description = 'Ingénieur logiciel - applications mobiles, SaaS, IoT et systèmes embarqués. Conception et développement de produits logiciels de bout en bout.'
+
 useSeoMeta({
-  title: 'Hugo Schroder - Ingénieur logiciel',
-  description: 'Ingénieur logiciel - applications mobiles, SaaS, IoT et systèmes embarqués. Conception et développement de produits logiciels de bout en bout.'
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description
 })
+
+// Person + WebSite + WebPage sont injectés automatiquement (schemaOrg.identity).
+useSchemaOrg([
+  defineWebPage({ '@type': ['WebPage', 'ProfilePage'] })
+])
 </script>

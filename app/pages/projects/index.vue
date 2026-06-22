@@ -47,10 +47,24 @@
 <script setup lang="ts">
 import { projects, type ProjectCategory } from '~/data/projects'
 
+const title = 'Projets - Hugo Schroder'
+const description = 'Applications mobiles, SaaS, systèmes IoT et outils, les projets de Hugo Schroder, ingénieur logiciel.'
+
 useSeoMeta({
-  title: 'Projets - Hugo Schroder',
-  description: 'Applications mobiles, SaaS, systèmes IoT et outils, les projets de Hugo Schroder, ingénieur logiciel.'
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description
 })
+
+useSchemaOrg([
+  defineBreadcrumb({
+    itemListElement: [
+      { name: 'Accueil', item: '/' },
+      { name: 'Projets', item: '/projects' }
+    ]
+  })
+])
 
 const activeCategory = ref<ProjectCategory | null>(null)
 

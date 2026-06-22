@@ -1,0 +1,23 @@
+# Hugo Schroder — Ingénieur logiciel
+
+> Ingénieur logiciel indépendant basé en France. Conception et développement de produits logiciels de bout en bout : applications mobiles (iOS/Android), SaaS et applications web, IoT et systèmes embarqués.
+
+## À propos
+- Nom : Hugo Schroder
+- Métier : Ingénieur logiciel (mobile, SaaS/web, IoT & systèmes embarqués)
+- Site : https://hugoschroder.dev
+- Contact : contact@hugoschroder.dev
+- GitHub : https://github.com/HijackCs
+- LinkedIn : https://www.linkedin.com/in/hugo-schroder
+
+## Pages
+- [Accueil](https://hugoschroder.dev/): présentation et expertises
+- [Projets](https://hugoschroder.dev/projects): sélection de projets (mobile, web, IoT, outils)
+- [À propos](https://hugoschroder.dev/about): parcours et stack technique
+- [Contact](https://hugoschroder.dev/contact): prise de contact
+
+## Projets notables
+- Lenspot : application iOS native (SwiftUI, SwiftData, StoreKit 2, WidgetKit), conçue et publiée sur l'App Store en 30 jours.
+- GFaim : application mobile.
+- Refonte d'une application de gestion interne (Symfony, Vue.js, PostgreSQL, Docker, GitLab CI).
+- Domotique IoT : système domotique évolutif sur Raspberry Pi (Arduino, Zigbee, Home Assistant, n8n).

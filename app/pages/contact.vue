@@ -44,10 +44,25 @@
 </template>
 
 <script setup lang="ts">
+const title = 'Contact — Hugo Schroder'
+const description = 'Contacter Hugo Schroder, ingénieur logiciel — missions mobiles, SaaS et IoT.'
+
 useSeoMeta({
-  title: 'Contact — Hugo Schroder',
-  description: 'Contacter Hugo Schroder, ingénieur logiciel — missions mobiles, SaaS et IoT.'
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description
 })
+
+useSchemaOrg([
+  defineWebPage({ '@type': ['WebPage', 'ContactPage'] }),
+  defineBreadcrumb({
+    itemListElement: [
+      { name: 'Accueil', item: '/' },
+      { name: 'Contact', item: '/contact' }
+    ]
+  })
+])
 
 const root = ref<HTMLElement | null>(null)
 useScrollReveal(root)

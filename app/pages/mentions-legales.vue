@@ -345,6 +345,26 @@
 </template>
 
 <script setup lang="ts">
+const title = 'Mentions légales - Hugo Schroder'
+const description = 'Mentions légales, éditeur, hébergement et politique de confidentialité (RGPD) du site hugoschroder.dev.'
+
+useSeoMeta({
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  robots: 'noindex, follow'
+})
+
+useSchemaOrg([
+  defineBreadcrumb({
+    itemListElement: [
+      { name: 'Accueil', item: '/' },
+      { name: 'Mentions légales', item: '/mentions-legales' }
+    ]
+  })
+])
+
 const root = ref<HTMLElement | null>(null)
 useScrollReveal(root)
 
