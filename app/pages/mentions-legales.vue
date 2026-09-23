@@ -46,27 +46,6 @@
             </dd>
           </div>
         </dl>
-
-        <div class="mt-6 border-t border-line pt-6">
-          <p class="text-sm leading-relaxed text-ink/90">
-            Bénéficiaire d’un <strong class="font-semibold text-ink">CAPE</strong>
-            (Contrat d’Appui au Projet d’Entreprise) jusqu’au 2 novembre 2026.
-          </p>
-          <dl class="mt-4 flex flex-col gap-3 text-sm">
-            <div
-              v-for="row in cape"
-              :key="row.label"
-              class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-4"
-            >
-              <dt class="font-mono text-xs text-muted sm:w-56 sm:shrink-0">
-                {{ row.label }}
-              </dt>
-              <dd class="text-ink/90">
-                {{ row.value }}
-              </dd>
-            </div>
-          </dl>
-        </div>
       </section>
 
       <!-- Réalisation -->
@@ -169,6 +148,19 @@
           Protection des données personnelles (RGPD)
         </h2>
         <div class="mt-5 space-y-4 text-sm leading-relaxed text-muted">
+          <h3 class="font-mono text-xs tracking-[0.2em] text-primary uppercase">
+            Responsable du traitement
+          </h3>
+          <p>
+            Hugo Schroder EI est responsable du traitement des données
+            personnelles transmises dans le cadre de son activité. Pour toute question,
+            vous pouvez écrire à
+            <a
+              href="mailto:contact@hugoschroder.dev"
+              class="text-primary transition-colors hover:text-ink"
+            >contact@hugoschroder.dev</a>.
+          </p>
+
           <h3 class="font-mono text-xs tracking-[0.2em] text-primary uppercase">
             Collecte des données
           </h3>
@@ -338,7 +330,7 @@
         data-reveal
         class="pt-2 text-center font-mono text-xs text-muted"
       >
-        Dernière mise à jour : juin 2026
+        Dernière mise à jour : septembre 2026
       </p>
     </div>
   </div>
@@ -369,16 +361,17 @@ const root = ref<HTMLElement | null>(null)
 useScrollReveal(root)
 
 const editeur = [
+  { label: 'Éditeur', value: 'Hugo Schroder EI' },
+  { label: 'Forme juridique', value: 'Entrepreneur individuel (EI)' },
+  { label: 'Régime', value: 'Micro-entreprise' },
+  { label: 'Adresse professionnelle', value: '266 rue Nationale, 59800 Lille, France' },
+  { label: 'SIREN', value: '106 983 414' },
+  { label: 'SIRET', value: '106 983 414 00017' },
+  { label: 'Code APE / NAF', value: '62.01Z' },
   { label: 'Directeur de publication', value: 'Hugo Schroder' },
   { label: 'Email', value: 'contact@hugoschroder.dev', href: 'mailto:contact@hugoschroder.dev' },
+  { label: 'Téléphone', value: '07 43 59 39 95', href: 'tel:+33743593995' },
   { label: 'Site web', value: 'hugoschroder.dev', href: 'https://hugoschroder.dev' }
-]
-
-const cape = [
-  { label: 'Structure d’accompagnement', value: 'Espace des Entrepreneurs — Incubatest' },
-  { label: 'SIRET', value: '418 541 553 000 32' },
-  { label: 'TVA intracommunautaire', value: 'FR 23 418 541 553' },
-  { label: 'Code NAF', value: '8899B' }
 ]
 
 const hebergement = [

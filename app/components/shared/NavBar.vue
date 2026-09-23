@@ -80,6 +80,7 @@ watch(() => route.path, () => {
 const links = [
   { to: '/projects', label: 'projets' },
   { to: '/about', label: 'a-propos' },
+  { to: '/cv', label: 'cv' },
   { to: '/contact', label: 'contact' }
 ]
 </script>

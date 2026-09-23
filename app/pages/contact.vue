@@ -44,8 +44,8 @@
 </template>
 
 <script setup lang="ts">
-const title = 'Contact — Hugo Schroder'
-const description = 'Contacter Hugo Schroder, ingénieur logiciel — missions mobiles, SaaS et IoT.'
+const title = 'Contact - Hugo Schroder'
+const description = 'Contacter Hugo Schroder, ingénieur logiciel - missions mobiles, SaaS et IoT.'
 
 useSeoMeta({
   title,

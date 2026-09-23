@@ -20,13 +20,12 @@ export default defineNuxtConfig({
       meta: [
         { name: 'description', content: 'Ingénieur logiciel - applications mobiles, SaaS, IoT et systèmes embarqués. Conception et développement de produits logiciels de bout en bout.' },
         { name: 'theme-color', content: '#0D1117' },
-        // Image OG/Twitter par défaut (statique, générée via scripts/generate-og.mjs).
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Hugo Schroder' },
         { property: 'og:image', content: 'https://hugoschroder.dev/og-image.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
-        { property: 'og:image:alt', content: 'Hugo Schroder — Ingénieur logiciel' },
+        { property: 'og:image:alt', content: 'Hugo Schroder - Ingénieur logiciel' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:image', content: 'https://hugoschroder.dev/og-image.png' }
       ]
@@ -47,6 +46,7 @@ export default defineNuxtConfig({
     '/': { prerender: true },
     '/projects': { prerender: true },
     '/about': { prerender: true },
+    '/cv': { prerender: true },
     '/contact': { prerender: true },
     '/mentions-legales': { prerender: true }
   },

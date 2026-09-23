@@ -70,19 +70,7 @@
           class="group inline-flex items-center gap-2 rounded-lg bg-gradient-signature px-6 py-3 font-display text-sm font-semibold text-white transition-shadow duration-300 hover:shadow-glow"
         >
           Voir mes projets
-          <svg
-            class="size-4 transition-transform duration-300 group-hover:translate-x-1"
-            viewBox="0 0 16 16"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-          >
-            <path
-              d="M2 8h11M9 4l4 4-4 4"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+
         </NuxtLink>
         <NuxtLink
           to="/contact"

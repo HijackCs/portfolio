@@ -1,4 +1,4 @@
-# Hugo Schroder — Ingénieur logiciel
+# Hugo Schroder - Ingénieur logiciel
 
 > Ingénieur logiciel indépendant basé en France. Conception et développement de produits logiciels de bout en bout : applications mobiles (iOS/Android), SaaS et applications web, IoT et systèmes embarqués.
 

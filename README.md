@@ -1,4 +1,4 @@
-# Portfolio — Hugo Schroder
+# Portfolio - Hugo Schroder
 
 Personal portfolio of Hugo Schroder, software engineer. A static, prerendered website
 showcasing projects across mobile apps, web & SaaS, IoT and tooling.
@@ -7,13 +7,13 @@ Built with **Nuxt 4**, **Vue 3**, **Tailwind CSS v4** and **GSAP** for animation
 
 ## Tech stack
 
-- [Nuxt 4](https://nuxt.com/) — Vue framework, fully prerendered (static generation)
+- [Nuxt 4](https://nuxt.com/) - Vue framework, fully prerendered (static generation)
 - [Vue 3](https://vuejs.org/) + [Vue Router](https://router.vuejs.org/)
 - [Tailwind CSS v4](https://tailwindcss.com/) via the `@tailwindcss/vite` plugin
-- [GSAP](https://gsap.com/) — scroll and entrance animations (`app/composables/useGsap.ts`)
-- [`@nuxt/image`](https://image.nuxt.com/) — optimized images
-- [`@nuxt/fonts`](https://fonts.nuxt.com/) — Space Grotesk, Inter, JetBrains Mono
-- [`@nuxt/eslint`](https://eslint.nuxt.com/) — linting with stylistic rules
+- [GSAP](https://gsap.com/) - scroll and entrance animations (`app/composables/useGsap.ts`)
+- [`@nuxt/image`](https://image.nuxt.com/) - optimized images
+- [`@nuxt/fonts`](https://fonts.nuxt.com/) - Space Grotesk, Inter, JetBrains Mono
+- [`@nuxt/eslint`](https://eslint.nuxt.com/) - linting with stylistic rules
 - TypeScript
 
 ## Project structure

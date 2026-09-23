@@ -34,7 +34,7 @@
     </div>
 
     <div class="mt-5 flex items-center justify-between border-t border-line pt-4 font-mono text-xs text-muted">
-      <span>durée — {{ project.duration }}</span>
+      <span>durée - {{ project.duration }}</span>
       <span class="inline-flex items-center gap-1 text-muted transition-colors group-hover:text-primary">
         détail
         <span class="inline-block transition-transform group-hover:translate-x-1">→</span>

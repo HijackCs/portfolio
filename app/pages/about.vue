@@ -93,9 +93,14 @@ useScrollReveal(root)
 
 const timeline = [
   {
-    period: '2023 - 2025',
-    title: 'Master ingénierie logicielle pour l\'internet',
-    description: 'Formation en alternance: architecture logicielle, développement web et mobile, Docker, intégration continue.'
+    period: '2026',
+    title: 'Lenspot - publication App Store',
+    description: 'Application iOS native conçue et développée seul en 30 jours, de zéro à l\'App Store, le tout documenté en "build in public" sur mes réseaux sociaux. SwiftUI, SwiftData, StoreKit 2, WidgetKit.'
+  },
+  {
+    period:'depuis 2025',
+    title: 'Développeur freelance',
+    description: 'Conception et développement de services web et outils numériques sur mesure.'
   },
   {
     period: '2023 - 2025',
@@ -103,15 +108,17 @@ const timeline = [
     description: 'Travail sur plusieurs application web interne en production, dont une refonte complète en autonomie, du recueil de besoin au déploiement. Symfony, Vue.js, PostgreSQL, Docker, GitLab CI.'
   },
   {
-    period: 'Depuis 2025',
+    period: '2023 - 2025',
+    title: 'Master ingénierie logicielle pour l\'internet',
+    description: 'Formation en alternance: architecture logicielle, développement web et mobile, Docker, intégration continue.'
+  },
+
+  {
+    period: 'Depuis 2024',
     title: 'Projets IoT & self-hosting',
     description: 'Système domotique évolutif sur Raspberry Pi (Arduino, Zigbee, Home Assistant, n8n) et infrastructure auto-hébergée.'
   },
-  {
-    period: '2026',
-    title: 'Lenspot - publication App Store',
-    description: 'Application iOS native conçue et développée seul en 30 jours, de zéro à l\'App Store, le tout documenté en "build in public" sur mes réseaux sociaux. SwiftUI, SwiftData, StoreKit 2, WidgetKit.'
-  }
+
 ]
 
 const stack = [
